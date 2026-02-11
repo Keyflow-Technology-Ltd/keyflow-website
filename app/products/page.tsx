@@ -73,8 +73,13 @@ export default function ProductsPage() {
                 Request Leaseflow Demo
               </Link>
             </div>
-            <div className="aspect-[4/3] rounded-2xl bg-[#F8F8F8] flex items-center justify-center">
-              <span className="text-sm text-[#999]">Product Screenshot</span>
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/leaseflow-screenshot.png"
+                alt="LeaseFlow Dashboard"
+                className="w-full h-auto"
+              />
             </div>
           </div>
 
@@ -118,8 +123,13 @@ export default function ProductsPage() {
       <section className="py-20 px-6 md:px-20 bg-[#F8F8F8]">
         <div className="mx-auto max-w-[1440px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="aspect-[4/3] rounded-2xl bg-white flex items-center justify-center order-2 lg:order-1">
-              <span className="text-sm text-[#999]">Product Screenshot</span>
+            <div className="rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/leadsflow-screenshot.png"
+                alt="LeadsFlow Pipeline"
+                className="w-full h-auto"
+              />
             </div>
             <div className="order-1 lg:order-2">
               <div className="flex items-center gap-3 mb-4">
