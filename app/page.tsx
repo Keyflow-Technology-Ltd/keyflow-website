@@ -22,39 +22,38 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-20 md:pt-28 pb-10 px-6 md:px-20">
-        <div className="mx-auto max-w-[1440px] flex flex-col items-center text-center gap-10">
-          <div className="max-w-[900px] flex flex-col items-center gap-6">
-            <h1 className="text-4xl md:text-[56px] font-bold text-[#1B1B1B] leading-[1.1]">
-              The Operating System for Dubai Real Estate
-            </h1>
-            <p className="text-lg text-[#666] leading-relaxed max-w-[680px]">
-              End-to-end platforms built for every stakeholder in the property
-              lifecycle. From lease management to lead generation — Keyflow
-              streamlines how real estate works.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/request-demo"
-                className="bg-[#1B1B1B] text-white px-9 py-4 rounded-md font-semibold hover:bg-[#333] transition-colors text-center"
-              >
-                Request a Demo
-              </Link>
-              <Link
-                href="/products"
-                className="border-[1.5px] border-[#1B1B1B] text-[#1B1B1B] px-9 py-4 rounded-md font-semibold hover:bg-[#F8F8F8] transition-colors flex items-center justify-center gap-2"
-              >
-                Explore Products
-              </Link>
-            </div>
-          </div>
-          <div className="w-full max-w-[1100px] aspect-[11/5] rounded-xl overflow-hidden bg-[#F8F8F8]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://images.unsplash.com/photo-1765504033368-eec68680d2ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-              alt="Abstract architecture"
-              className="object-cover w-full h-full"
-            />
+      <section className="relative overflow-hidden py-28 md:py-40 px-6 md:px-20">
+        {/* Background image */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://images.unsplash.com/photo-1765504033368-eec68680d2ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-15"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/40 to-white/80" />
+        <div className="relative mx-auto max-w-[1440px] flex flex-col items-center text-center gap-6">
+          <h1 className="text-4xl md:text-[56px] font-bold text-[#1B1B1B] leading-[1.1] max-w-[900px]">
+            The Operating System for Dubai Real Estate
+          </h1>
+          <p className="text-lg text-[#666] leading-relaxed max-w-[680px]">
+            End-to-end platforms built for every stakeholder in the property
+            lifecycle. From lease management to lead generation — Keyflow
+            streamlines how real estate works.
+          </p>
+          <div className="mt-2 flex flex-col sm:flex-row gap-4">
+            <Link
+              href="/request-demo"
+              className="bg-[#1B1B1B] text-white px-9 py-4 rounded-md font-semibold hover:bg-[#333] transition-colors text-center"
+            >
+              Request a Demo
+            </Link>
+            <Link
+              href="/products"
+              className="border-[1.5px] border-[#1B1B1B] text-[#1B1B1B] px-9 py-4 rounded-md font-semibold hover:bg-white/60 transition-colors flex items-center justify-center gap-2"
+            >
+              Explore Products
+            </Link>
           </div>
         </div>
       </section>
