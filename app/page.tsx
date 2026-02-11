@@ -29,7 +29,7 @@ export default function HomePage() {
           src="https://images.unsplash.com/photo-1765504033368-eec68680d2ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-15"
+          className="absolute inset-0 w-full h-full object-cover opacity-35"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/40 to-white/80" />
         <div className="relative mx-auto max-w-[1440px] flex flex-col items-center text-center gap-6">
