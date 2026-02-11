@@ -21,7 +21,7 @@ export default function Header() {
       <div className="mx-auto max-w-[1440px] px-6 md:px-20 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/logo.png" alt="Keyflow" width={40} height={40} />
+          <Image src="/logo.svg" alt="Keyflow" width={36} height={36} />
           <span className="text-[22px] font-bold tracking-[4px] text-[#1B1B1B]">
             KEYFLOW
           </span>

@@ -39,10 +39,10 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Keyflow"
-                width={32}
-                height={32}
+                width={28}
+                height={28}
                 className="brightness-0 invert"
               />
               <span className="text-lg font-bold tracking-[4px]">KEYFLOW</span>
