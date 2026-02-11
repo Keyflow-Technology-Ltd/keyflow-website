@@ -176,13 +176,19 @@ export default function AboutPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-[#1B1B1B] mb-4">
             Rooted in Dubai. Built for the UAE.
           </h2>
-          <p className="text-base text-[#666] leading-relaxed">
+          <p className="text-base text-[#666] leading-relaxed mb-6">
             Dubai&apos;s real estate market is unlike any other in the world. Its
             pace, its scale, its regulatory framework, and its multicultural
             stakeholders demand solutions that truly understand this environment.
             Keyflow was founded in Dubai because we believe the region deserves
             technology that matches its ambition.
           </p>
+          <div className="inline-flex items-center gap-2 bg-white border border-[#E0E0E0] px-5 py-2.5 rounded-full">
+            <span className="w-2 h-2 rounded-full bg-emerald-500" />
+            <span className="text-sm font-medium text-[#555]">
+              Proud member of the <span className="font-semibold text-[#1B1B1B]">Proptech Hub</span> — an initiative by DIFC &amp; Dubai Land Department
+            </span>
+          </div>
         </div>
       </section>
 

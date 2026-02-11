@@ -47,10 +47,16 @@ export default function Footer() {
               />
               <span className="text-lg font-bold tracking-[4px]">KEYFLOW</span>
             </div>
-            <p className="text-sm text-[#888] leading-relaxed max-w-sm">
+            <p className="text-sm text-[#888] leading-relaxed max-w-sm mb-4">
               AI-powered real estate solutions built for the Dubai market.
               Transforming how property works.
             </p>
+            <div className="inline-flex items-center gap-2 bg-[#252525] px-3 py-1.5 rounded-full">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+              <span className="text-[11px] text-[#888]">
+                DIFC &times; DLD Proptech Hub
+              </span>
+            </div>
           </div>
 
           {/* Nav Columns */}

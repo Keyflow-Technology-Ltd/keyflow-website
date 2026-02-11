@@ -55,6 +55,12 @@ export default function HomePage() {
               Explore Products
             </Link>
           </div>
+          <div className="mt-8 inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm border border-[#E0E0E0] px-5 py-2.5 rounded-full">
+            <span className="w-2 h-2 rounded-full bg-emerald-500" />
+            <span className="text-xs font-medium text-[#555]">
+              Part of the <span className="font-semibold text-[#1B1B1B]">Proptech Hub</span> — a DIFC &times; DLD Initiative
+            </span>
+          </div>
         </div>
       </section>
 
