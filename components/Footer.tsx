@@ -23,8 +23,8 @@ const footerColumns = [
   {
     title: "Legal",
     links: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Terms of Service", href: "/terms-of-service" },
       { label: "Security", href: "#" },
     ],
   },
@@ -82,7 +82,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-[#333] flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-[#666]">
-            &copy; 2025 Keyflow Technologies. All rights reserved.
+            &copy; 2026 Keyflow Technology Ltd. All rights reserved. DIFC License CL-12435.
           </p>
           <p className="text-xs text-[#666]">Dubai, United Arab Emirates</p>
         </div>
