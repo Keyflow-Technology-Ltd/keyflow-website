@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 /**
@@ -20,22 +20,18 @@ type ConsentPreference = {
   timestamp: string;
 };
 
-export default function CookieConsent() {
-  const [visible, setVisible] = useState(false);
-  const [analyticsConsent, setAnalyticsConsent] = useState(false);
+function shouldShowBanner(): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    return !localStorage.getItem(COOKIE_CONSENT_KEY);
+  } catch {
+    return true;
+  }
+}
 
-  useEffect(() => {
-    // Check if user has already set a preference
-    try {
-      const stored = localStorage.getItem(COOKIE_CONSENT_KEY);
-      if (!stored) {
-        setVisible(true);
-      }
-    } catch {
-      // localStorage unavailable — show banner
-      setVisible(true);
-    }
-  }, []);
+export default function CookieConsent() {
+  const [visible, setVisible] = useState(shouldShowBanner);
+  const [analyticsConsent, setAnalyticsConsent] = useState(false);
 
   const savePreference = (analytics: boolean) => {
     const preference: ConsentPreference = {
