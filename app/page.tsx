@@ -99,7 +99,7 @@ export default function HomePage() {
                 <div className="inline-flex items-center gap-2 bg-[#F8F8F8] px-3 py-1.5 rounded-full mb-4">
                   <span className="w-2 h-2 rounded-full bg-emerald-500" />
                   <span className="text-xs font-medium text-[#666]">
-                    Launching Soon
+                    Live
                   </span>
                 </div>
                 <h3 className="text-xl font-bold text-[#1B1B1B] mb-3">
@@ -152,9 +152,9 @@ export default function HomePage() {
               </div>
               <div className="p-8">
                 <div className="inline-flex items-center gap-2 bg-[#F8F8F8] px-3 py-1.5 rounded-full mb-4">
-                  <span className="w-2 h-2 rounded-full bg-amber-500" />
+                  <span className="w-2 h-2 rounded-full bg-emerald-500" />
                   <span className="text-xs font-medium text-[#666]">
-                    Coming Soon
+                    Live
                   </span>
                 </div>
                 <h3 className="text-xl font-bold text-[#1B1B1B] mb-3">

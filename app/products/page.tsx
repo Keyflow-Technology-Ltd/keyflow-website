@@ -54,7 +54,7 @@ export default function ProductsPage() {
               <div className="inline-flex items-center gap-2 bg-[#F8F8F8] px-3 py-1.5 rounded-full mb-6">
                 <span className="w-2 h-2 rounded-full bg-emerald-500" />
                 <span className="text-xs font-medium text-[#666]">
-                  Launching Soon
+                  Live
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-4">
@@ -141,9 +141,9 @@ export default function ProductsPage() {
                 </span>
               </div>
               <div className="inline-flex items-center gap-2 bg-white px-3 py-1.5 rounded-full mb-6">
-                <span className="w-2 h-2 rounded-full bg-amber-500" />
+                <span className="w-2 h-2 rounded-full bg-emerald-500" />
                 <span className="text-xs font-medium text-[#666]">
-                  Coming Soon
+                  Live
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-4">
