@@ -5,18 +5,15 @@ const footerColumns = [
   {
     title: "Products",
     links: [
-      { label: "Leaseflow", href: "/products" },
-      { label: "Leadsflow", href: "/products" },
-      { label: "Pricing", href: "#" },
-      { label: "Integrations", href: "#" },
+      { label: "LeaseFlow", href: "/products" },
+      { label: "LeadsFlow", href: "/products" },
+      { label: "Pricing", href: "/pricing" },
     ],
   },
   {
     title: "Company",
     links: [
       { label: "About", href: "/about" },
-      { label: "Careers", href: "#" },
-      { label: "Blog", href: "#" },
       { label: "Contact", href: "/contact" },
     ],
   },
@@ -25,7 +22,6 @@ const footerColumns = [
     links: [
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms of Service", href: "/terms-of-service" },
-      { label: "Security", href: "#" },
     ],
   },
 ];
