@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { generalSans, satoshi, editorialNew } from "@/lib/fonts";
 import { Navigation } from "@/components/layout/navigation";
+import { Footer } from "@/components/layout/footer";
 import { SkipToContent } from "@/components/layout/skip-to-content";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Keyflow \u2014 The Future of Real Estate",
-  description: "The integrated software suite for Dubai real estate stakeholders.",
+  title: "Keyflow — The Future of Real Estate",
+  description: "The integrated software suite for Dubai real estate stakeholders. AI-powered tools for agents, agencies, developers, owners, and tenants.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SkipToContent />
         <Navigation />
         <main id="main-content">{children}</main>
+        <Footer />
       </body>
     </html>
   );
