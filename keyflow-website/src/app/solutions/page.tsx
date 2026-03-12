@@ -1,5 +1,6 @@
 import { pageMetadata } from "@/content/metadata";
 import { products } from "@/content/products";
+import { softwareSchema } from "@/lib/seo";
 import { StakeholderNav } from "@/components/solutions/stakeholder-nav";
 import { ProductDeepDive } from "@/components/solutions/product-deep-dive";
 import { DLDHighlight } from "@/components/solutions/dld-highlight";
@@ -10,6 +11,14 @@ export const metadata = pageMetadata.solutions;
 export default function SolutionsPage() {
   return (
     <>
+      {/* JSON-LD: SoftwareApplication schemas — static content, no user input */}
+      {products.map((product) => (
+        <script
+          key={product.slug}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema(product)) }}
+        />
+      ))}
       {/* Hero */}
       <section className="min-h-[60vh] flex flex-col items-center justify-center px-6 text-center pt-24">
         <h1 className="font-display text-5xl desktop:text-[7rem] font-bold text-brand-dark leading-none">
