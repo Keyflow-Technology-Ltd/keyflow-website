@@ -39,7 +39,11 @@ export function EarlyAccessCTA({
 
   if (status === "success") {
     return (
-      <section className={clsx("py-24 px-6 text-center", isDark ? "bg-brand-dark" : "bg-brand-light")}>
+      <section
+        className={clsx("py-24 px-6 text-center", isDark ? "bg-brand-dark" : "bg-brand-light")}
+        aria-live="polite"
+        aria-atomic="true"
+      >
         <h2 className={clsx("font-display text-3xl tablet:text-5xl font-bold mb-4", isDark ? "text-brand-light" : "text-brand-dark")}>
           You&apos;re in.
         </h2>
@@ -81,7 +85,9 @@ export function EarlyAccessCTA({
         </Button>
       </form>
       {status === "error" && (
-        <p className="text-red-500 text-sm mt-3 font-body">Something went wrong. Please try again.</p>
+        <p role="alert" aria-live="assertive" className="text-red-500 text-sm mt-3 font-body">
+          Something went wrong. Please try again.
+        </p>
       )}
     </section>
   );

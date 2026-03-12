@@ -56,6 +56,8 @@ export function Navigation() {
             onClick={() => setMenuOpen(true)}
             className="tablet:hidden font-body text-sm text-brand-dark"
             aria-label="Open menu"
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
           >
             Menu
           </button>

@@ -76,7 +76,7 @@ export function WaitlistForm() {
 
   if (status === "success") {
     return (
-      <div className="text-center py-16">
+      <div className="text-center py-16" aria-live="polite" aria-atomic="true">
         <h2 className="font-display text-3xl font-bold text-brand-dark mb-4">
           You&apos;re in.
         </h2>
@@ -153,7 +153,7 @@ export function WaitlistForm() {
       </Button>
 
       {status === "error" && (
-        <p className="text-red-500 text-sm text-center font-body">
+        <p role="alert" aria-live="assertive" className="text-red-500 text-sm text-center font-body">
           Something went wrong. Please try again.
         </p>
       )}

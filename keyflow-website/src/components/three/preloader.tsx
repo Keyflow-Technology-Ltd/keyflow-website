@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Canvas } from "@react-three/fiber";
 import { PreloaderCables } from "./preloader-cables";
 import { LogoPortal } from "./logo-portal";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 type PreloaderPhase = "loading" | "snapping" | "hovering" | "portal" | "complete";
 
@@ -11,9 +12,17 @@ interface PreloaderProps {
 }
 
 export function Preloader({ onComplete }: PreloaderProps) {
+  const reducedMotion = useReducedMotion();
   const [phase, setPhase] = useState<PreloaderPhase>("loading");
   const [loadProgress, setLoadProgress] = useState(0);
   const [skipEnabled, setSkipEnabled] = useState(false);
+
+  // Skip preloader entirely for users who prefer reduced motion
+  useEffect(() => {
+    if (reducedMotion) {
+      onComplete();
+    }
+  }, [reducedMotion, onComplete]);
 
   // Enable skip after 2 seconds
   useEffect(() => {
