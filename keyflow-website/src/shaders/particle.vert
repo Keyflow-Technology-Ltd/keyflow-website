@@ -1,3 +1,5 @@
+precision highp float;
+
 uniform float uTime;
 uniform float uTransition; // 0-1 blend between formations
 uniform vec2 uMouse;

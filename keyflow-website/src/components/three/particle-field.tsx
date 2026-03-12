@@ -76,7 +76,8 @@ export function ParticleField({
   const points = useRef<THREE.Points>(null);
   const mouse = useRef(new THREE.Vector2(0, 0));
 
-  const { positions, randoms, uniforms } = useMemo(() => {
+  // Stable across colorMode changes — only regenerate when count changes
+  const { positions, randoms } = useMemo(() => {
     const pos = new Float32Array(count * 3);
     const rand = new Float32Array(count);
 
@@ -87,17 +88,15 @@ export function ParticleField({
       rand[i] = Math.random();
     }
 
-    return {
-      positions: pos,
-      randoms: rand,
-      uniforms: {
-        uTime: { value: 0 },
-        uTransition: { value: 0 },
-        uMouse: { value: new THREE.Vector2(0, 0) },
-        uColor: { value: new THREE.Color(colorMode === "light" ? "#1b1b1b" : "#fafafa") },
-      },
-    };
-  }, [count, colorMode]);
+    return { positions: pos, randoms: rand };
+  }, [count]);
+
+  const uniforms = useMemo(() => ({
+    uTime: { value: 0 },
+    uTransition: { value: 0 },
+    uMouse: { value: new THREE.Vector2(0, 0) },
+    uColor: { value: new THREE.Color(colorMode === "light" ? "#1b1b1b" : "#fafafa") },
+  }), [colorMode]);
 
   const targets = useMemo(
     () => generateTargets(formation, count),
@@ -116,16 +115,21 @@ export function ParticleField({
     return () => window.removeEventListener("pointermove", handler);
   }, []);
 
-  // Update target buffer when formation changes
+  // Update target buffer when formation changes — replace attribute entirely
   useEffect(() => {
     if (!points.current) return;
     const geo = points.current.geometry;
-    const attr = geo.getAttribute("aTarget") as THREE.BufferAttribute;
-    if (attr) {
-      attr.array.set(targets);
-      attr.needsUpdate = true;
-    }
+    geo.setAttribute("aTarget", new THREE.BufferAttribute(targets, 3));
   }, [targets]);
+
+  // Update color uniform when colorMode changes
+  useEffect(() => {
+    if (!points.current) return;
+    const material = points.current.material as THREE.ShaderMaterial;
+    material.uniforms.uColor.value.set(
+      colorMode === "light" ? "#1b1b1b" : "#fafafa",
+    );
+  }, [colorMode]);
 
   useFrame(({ clock }) => {
     if (!points.current) return;
@@ -133,15 +137,10 @@ export function ParticleField({
     material.uniforms.uTime.value = clock.getElapsedTime();
     material.uniforms.uTransition.value = transition;
     material.uniforms.uMouse.value.copy(mouse.current);
-    material.uniforms.uColor.value.set(
-      colorMode === "light" ? "#1b1b1b" : "#fafafa",
-    );
   });
 
-  if (!visible) return null;
-
   return (
-    <points ref={points}>
+    <points ref={points} visible={visible}>
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"

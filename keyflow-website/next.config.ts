@@ -8,6 +8,13 @@ const nextConfig: NextConfig = {
       "*.glsl": { loaders: ["raw-loader"], as: "*.js" },
     },
   },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.(vert|frag|glsl)$/,
+      type: "asset/source",
+    });
+    return config;
+  },
 };
 
 export default nextConfig;
