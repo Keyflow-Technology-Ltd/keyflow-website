@@ -4,6 +4,7 @@ import { Navigation } from "@/components/layout/navigation";
 import { Footer } from "@/components/layout/footer";
 import { SkipToContent } from "@/components/layout/skip-to-content";
 import { PageTransition } from "@/components/layout/page-transition";
+import { AnalyticsProvider } from "@/components/layout/analytics-provider";
 import { organizationSchema } from "@/lib/seo";
 import "./globals.css";
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }}
         />
         <SkipToContent />
+        <AnalyticsProvider />
         <Navigation />
         <main id="main-content" tabIndex={-1}>
           <PageTransition>{children}</PageTransition>
