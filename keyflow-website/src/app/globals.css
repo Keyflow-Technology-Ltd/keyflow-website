@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-brand-light: #fafafa;
+  --color-brand-dark: #1b1b1b;
+  --color-brand-accent: #C9A96E;
+  --color-brand-accent-hover: #D4B97E;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-general-sans), sans-serif;
+  --font-body: var(--font-satoshi), sans-serif;
+  --font-accent: var(--font-editorial-new), serif;
+
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1280px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-brand-light);
+  color: var(--color-brand-dark);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--color-brand-accent) 30%, transparent);
+  color: var(--color-brand-dark);
+}
+
+/* Focus ring for a11y -- gold accent */
+:focus-visible {
+  outline: 2px solid var(--color-brand-accent);
+  outline-offset: 2px;
 }
