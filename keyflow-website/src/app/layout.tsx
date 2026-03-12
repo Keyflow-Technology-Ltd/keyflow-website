@@ -3,6 +3,7 @@ import { generalSans, satoshi, editorialNew } from "@/lib/fonts";
 import { Navigation } from "@/components/layout/navigation";
 import { Footer } from "@/components/layout/footer";
 import { SkipToContent } from "@/components/layout/skip-to-content";
+import { PageTransition } from "@/components/layout/page-transition";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,7 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <SkipToContent />
         <Navigation />
-        <main id="main-content">{children}</main>
+        <main id="main-content" tabIndex={-1}>
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
       </body>
     </html>
