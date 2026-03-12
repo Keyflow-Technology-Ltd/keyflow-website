@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { generalSans, satoshi, editorialNew } from "@/lib/fonts";
+import { Navigation } from "@/components/layout/navigation";
+import { SkipToContent } from "@/components/layout/skip-to-content";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +15,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className={`${generalSans.variable} ${satoshi.variable} ${editorialNew.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <SkipToContent />
+        <Navigation />
+        <main id="main-content">{children}</main>
+      </body>
     </html>
   );
 }
