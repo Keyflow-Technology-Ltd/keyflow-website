@@ -85,9 +85,12 @@ Custom Three.js/R3F for hero and key moments (maximum Awwwards impact where judg
 | UI components (21st Dev) | Buttons, form inputs, navigation bar, CTA sections | Premium pre-built components — customized to match brand tokens |
 | Micro-interactions | Framer Motion | Hover states, menu toggles, small element transitions |
 | Styling | Tailwind CSS | All layout and responsive design |
-| Form backend | Resend (email) + Supabase (storage) | Waitlist submissions stored in Supabase, notification via Resend |
-| Analytics | PostHog | Page views, scroll depth, CTA clicks, form submissions |
-| Deployment | Vercel | Hosting, edge functions, preview deployments |
+| Form backend | API Gateway + Lambda + DynamoDB | Waitlist submissions stored in DynamoDB, notification via SES |
+| Email | Amazon SES | Confirmation emails to users, notification to Keyflow team |
+| Analytics | PostHog (self-hosted on AWS) | Page views, scroll depth, CTA clicks, form submissions |
+| Hosting | AWS Amplify | SSR hosting for Next.js, preview deployments per branch |
+| CDN | Amazon CloudFront | Static assets, Spline scenes, font files, OG images |
+| DNS | Amazon Route 53 | keyflowae.com domain management and SSL |
 
 ### Page Transition Architecture
 GSAP page transitions with Next.js App Router require a custom transition layer. Implementation approach:
@@ -272,9 +275,10 @@ Each product section includes:
 - Every input has subtle focus animations
 
 ### 8.3 Form Backend
-- Submissions stored in **Supabase** (table: `waitlist_submissions` with fields: id, stakeholder_type, name, email, company, message, created_at)
-- On submission: **Resend** sends a confirmation email to the user and a notification to the Keyflow team (a.alshaqra@keyflowae.com)
-- Rate limiting: max 3 submissions per email per day (prevent spam)
+- Form submits to **API Gateway** → **Lambda** function (Node.js runtime)
+- Submissions stored in **DynamoDB** (table: `keyflow-waitlist`, partition key: `email`, sort key: `created_at`, attributes: id, stakeholder_type, name, email, company, message, created_at)
+- On submission: **Amazon SES** sends a confirmation email to the user and a notification to the Keyflow team (a.alshaqra@keyflowae.com)
+- Rate limiting: API Gateway throttling + Lambda checks max 3 submissions per email per day (prevent spam)
 - Success state: form morphs into a "You're in" confirmation with subtle animation
 
 ### 8.3 Direct Contact
@@ -361,7 +365,7 @@ On the homepage Credibility Strip (5.6), they appear as "Strategic Advisors." On
 - WhatsApp preview optimized (important for Dubai market where WhatsApp is dominant)
 
 ### Analytics & Conversion Tracking
-- **Tool:** PostHog (self-hosted or cloud)
+- **Tool:** PostHog (self-hosted on AWS — ECS Fargate or EC2 with PostgreSQL on RDS)
 - **Events tracked:**
   - `page_view` — all pages with scroll depth (25%, 50%, 75%, 100%)
   - `cta_click` — every "Get Early Access" button, tagged by location (hero, footer, solutions)
@@ -421,7 +425,7 @@ On the homepage Credibility Strip (5.6), they appear as "Strategic Advisors." On
 - [ ] Lighthouse: Performance > 60, Accessibility > 90, Best Practices > 90, SEO > 95
 - [ ] Full responsiveness across desktop (>1280px), tablet (768-1279px), mobile (<768px)
 - [ ] All pages load within 3 seconds on 4G connection (excluding preloader)
-- [ ] Waitlist form functional: submissions stored in Supabase, confirmation emails via Resend
+- [ ] Waitlist form functional: submissions stored in DynamoDB, confirmation emails via SES
 - [ ] Brand credibility established — visitor leaves knowing Keyflow is legitimate and backed by DLD/DIFC
 - [ ] `prefers-reduced-motion` fully supported with premium fallback experience
 - [ ] All form fields accessible via keyboard with visible focus indicators
