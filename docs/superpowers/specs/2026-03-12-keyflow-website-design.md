@@ -308,7 +308,7 @@ Each product section includes:
 - Reusable React component with configurable props: `headline` (string), `subtext` (string, optional), `variant` ("light" | "dark")
 - Homepage uses: headline="Join the future of Dubai real estate", variant="light"
 - Solutions uses: headline="See yourself in the flow", variant="light"
-- All instances submit to the same Supabase backend
+- All instances submit to the same AWS backend (API Gateway → Lambda → DynamoDB)
 
 ### Custom Cursor (Phase 2 — Post-Launch Polish)
 - Small circle that scales and morphs on interactive elements
