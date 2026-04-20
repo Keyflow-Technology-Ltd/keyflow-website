@@ -1,7 +1,3 @@
-// This Lambda has its own package.json and its own node_modules — the
-// Next.js root install doesn't pull in its deps. Skip type-checking here
-// so `next build` on CI doesn't fail on @aws-sdk imports it can't resolve.
-// @ts-nocheck
 import { DynamoDBClient, PutItemCommand, QueryCommand } from "@aws-sdk/client-dynamodb";
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 import { randomUUID } from "crypto";

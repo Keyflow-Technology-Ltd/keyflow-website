@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Stale v1 project kept in-tree for reference; the active Next.js
+    // app lives at the repo root.
+    "keyflow-website/**",
   ]),
 ]);
 
