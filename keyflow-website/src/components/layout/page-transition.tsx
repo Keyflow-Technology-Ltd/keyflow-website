@@ -64,9 +64,16 @@ export function PageTransition({ children }: PageTransitionProps) {
     main?.focus({ preventScroll: true });
   }, [children, reducedMotion]);
 
+  // Route transitions are inherently an external-side-effect + state sync:
+  // when the pathname changes we need to play a GSAP animation (external
+  // system) AND swap the rendered children. Both legitimate reasons to
+  // call setState from an effect — the lint rule flags the shape but the
+  // alternatives (imperative refs + forceUpdate) are strictly worse for
+  // readability here.
   useEffect(() => {
     if (pathname !== prevPathname.current) {
       prevPathname.current = pathname;
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       animateTransition();
     } else {
       setDisplayChildren(children);

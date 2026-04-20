@@ -9,8 +9,25 @@ interface ParticleFieldProps {
   count?: number;
   formation?: "ambient" | "converge" | "radiate" | "grid" | "cluster";
   transition?: number;
-  colorMode?: "light" | "dark";
+  colorMode?: "light" | "dark" | "accent";
   visible?: boolean;
+}
+
+const COLOR_MAP: Record<string, string> = {
+  light: "#1b1b1b",
+  dark: "#fafafa",
+  accent: "#C9A96E",
+};
+
+/** Deterministic 32-bit PRNG (Mulberry32). Pure: same seed → same sequence. */
+function mulberry32(seed: number): () => number {
+  let s = seed | 0;
+  return () => {
+    s = (s + 0x6d2b79f5) | 0;
+    let t = Math.imul(s ^ (s >>> 15), 1 | s);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
 }
 
 function generateTargets(
@@ -57,9 +74,9 @@ function generateTargets(
         break;
       }
       default: {
-        targets[i3] = (Math.random() - 0.5) * 8;
-        targets[i3 + 1] = (Math.random() - 0.5) * 6;
-        targets[i3 + 2] = (Math.random() - 0.5) * 2;
+        targets[i3] = (Math.random() - 0.5) * 10;
+        targets[i3 + 1] = (Math.random() - 0.5) * 8;
+        targets[i3 + 2] = (Math.random() - 0.5) * 3;
       }
     }
   }
@@ -67,43 +84,47 @@ function generateTargets(
 }
 
 export function ParticleField({
-  count = 2000,
+  count = 1500,
   formation = "ambient",
   transition = 0,
-  colorMode = "light",
+  colorMode = "accent",
   visible = true,
 }: ParticleFieldProps) {
   const points = useRef<THREE.Points>(null);
   const mouse = useRef(new THREE.Vector2(0, 0));
 
-  // Stable across colorMode changes — only regenerate when count changes
+  // Seed particle positions + per-particle random factors deterministically
+  // from `count` so the computation is pure (no Math.random in render —
+  // React 19's `react-hooks/purity` rule flags that). mulberry32 gives a
+  // fast 32-bit PRNG with excellent distribution for this seed size.
   const { positions, randoms } = useMemo(() => {
+    const rng = mulberry32(count ^ 0x9e3779b9);
     const pos = new Float32Array(count * 3);
     const rand = new Float32Array(count);
-
     for (let i = 0; i < count; i++) {
-      pos[i * 3] = (Math.random() - 0.5) * 8;
-      pos[i * 3 + 1] = (Math.random() - 0.5) * 6;
-      pos[i * 3 + 2] = (Math.random() - 0.5) * 2;
-      rand[i] = Math.random();
+      pos[i * 3] = (rng() - 0.5) * 14;
+      pos[i * 3 + 1] = (rng() - 0.5) * 10;
+      pos[i * 3 + 2] = (rng() - 0.5) * 6;
+      rand[i] = rng();
     }
-
     return { positions: pos, randoms: rand };
   }, [count]);
 
-  const uniforms = useMemo(() => ({
-    uTime: { value: 0 },
-    uTransition: { value: 0 },
-    uMouse: { value: new THREE.Vector2(0, 0) },
-    uColor: { value: new THREE.Color(colorMode === "light" ? "#1b1b1b" : "#fafafa") },
-  }), [colorMode]);
+  const uniforms = useMemo(
+    () => ({
+      uTime: { value: 0 },
+      uTransition: { value: 0 },
+      uMouse: { value: new THREE.Vector2(0, 0) },
+      uColor: { value: new THREE.Color(COLOR_MAP[colorMode] ?? COLOR_MAP.accent) },
+    }),
+    [colorMode],
+  );
 
   const targets = useMemo(
     () => generateTargets(formation, count),
     [formation, count],
   );
 
-  // Attach mouse listener to window (canvas has pointer-events: none)
   useEffect(() => {
     const handler = (e: PointerEvent) => {
       mouse.current.set(
@@ -115,20 +136,16 @@ export function ParticleField({
     return () => window.removeEventListener("pointermove", handler);
   }, []);
 
-  // Update target buffer when formation changes — replace attribute entirely
   useEffect(() => {
     if (!points.current) return;
     const geo = points.current.geometry;
     geo.setAttribute("aTarget", new THREE.BufferAttribute(targets, 3));
   }, [targets]);
 
-  // Update color uniform when colorMode changes
   useEffect(() => {
     if (!points.current) return;
     const material = points.current.material as THREE.ShaderMaterial;
-    material.uniforms.uColor.value.set(
-      colorMode === "light" ? "#1b1b1b" : "#fafafa",
-    );
+    material.uniforms.uColor.value.set(COLOR_MAP[colorMode] ?? COLOR_MAP.accent);
   }, [colorMode]);
 
   useFrame(({ clock }) => {
