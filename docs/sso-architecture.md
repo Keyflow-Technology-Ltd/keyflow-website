@@ -1,4 +1,4 @@
-# Keyflow SSO — `auth.keyflow.me`
+# Keyflow SSO — `auth.keyflowae.com`
 
 Status: **design — pending review** (2026-04-20)
 Owner: Abdallah Alshaqra
@@ -27,12 +27,12 @@ After Phase 2:
 ```
 ┌──────────────────────────────┐
 │ iOS apps (3×)                │
-│   KeyflowAuthKit (SPM)       │──┐  federated JWT (iss=auth.keyflow.me,
+│   KeyflowAuthKit (SPM)       │──┐  federated JWT (iss=auth.keyflowae.com,
 │   KeychainService, LoginView │  │  aud=<product>, sub=<product_user_id>)
 └──────────────────────────────┘  │
                                    ▼
                        ┌──────────────────────┐
-                       │ auth.keyflow.me      │
+                       │ auth.keyflowae.com      │
                        │ Next.js on ECS       │
                        │ Postgres (identities)│
                        └──────────────────────┘
@@ -45,7 +45,7 @@ After Phase 2:
         └────────────────┘ └────────────────┘ └────────────────┘
 ```
 
-- **auth.keyflow.me** — new Next.js app, new ECS service in the existing cluster, behind a new CloudFront distribution + Route 53 record. Issues federated tokens.
+- **auth.keyflowae.com** — new Next.js app, new ECS service in the existing cluster, behind a new CloudFront distribution + Route 53 record. Issues federated tokens.
 - **identities DB** — new Postgres schema. Stores only *authentication* data (email, password hash, MFA secrets, blocked state, session records). *No product-specific fields.* Links out to product user rows via `(product, product_user_id)` tuples.
 - **per-product backends** — extend each product's `verifyMobileToken` to accept federated tokens in addition to their existing native tokens during rollout.
 - **KeyflowAuthKit** — new Swift Package, depended on by all 3 iOS apps. Replaces each app's copy of `KeychainService`, `AuthService`, JWT decoding, login UI.
@@ -60,7 +60,7 @@ All tokens are JWT, HS256, signed with a per-product **federated signing key** s
 
 ```jsonc
 {
-  "iss": "auth.keyflow.me",
+  "iss": "auth.keyflowae.com",
   "aud": "leadsflow",              // or "dealsflow" / "leaseflow"
   "sub": "<product_user_id>",      // the user's id WITHIN that product
   "iat": 1776690000,
@@ -71,7 +71,7 @@ All tokens are JWT, HS256, signed with a per-product **federated signing key** s
   "tenantId": "org_abc123",         // organizationId / agency_id
   "tenantName": "Propoint Properties",
   "deviceId": "F4527ANP…",          // carried forward from Phase 1
-  "keyflow_uid": "k_01HXYZ…"        // stable ID across products (from auth.keyflow.me)
+  "keyflow_uid": "k_01HXYZ…"        // stable ID across products (from auth.keyflowae.com)
 }
 ```
 
@@ -86,7 +86,7 @@ Same `iss` / `aud`, `type: "refresh"`, plus a `session_id` claim pointing at the
 ### 3.3 Cross-product "handoff" token (short-lived, 60s)
 
 When the user is signed into LeadsFlow and taps a "Open in DealsFlow" deep link:
-- LeadsFlow calls `auth.keyflow.me/api/handoff/mint` with its own valid token.
+- LeadsFlow calls `auth.keyflowae.com/api/handoff/mint` with its own valid token.
 - Auth service mints a 60-second handoff token with `aud: "dealsflow"` if the user has a DealsFlow membership.
 - The deep link opens `dealsflow.me/auth/handoff?token=<…>` which exchanges it for a full DealsFlow session.
 
@@ -99,7 +99,7 @@ When the user is signed into LeadsFlow and taps a "Open in DealsFlow" deep link:
 During rollout each product's `lib/mobile-auth.ts` accepts:
 
 1. **Legacy product-local tokens** — existing `iss: "<product>-mobile"`, signed with `NEXTAUTH_SECRET` as today. Unchanged path.
-2. **Federated tokens** — `iss: "auth.keyflow.me"`, `aud: "<product>"`, signed with `FEDERATED_JWT_SECRET`.
+2. **Federated tokens** — `iss: "auth.keyflowae.com"`, `aud: "<product>"`, signed with `FEDERATED_JWT_SECRET`.
 
 ```ts
 async function verifyMobileToken(req) {
@@ -107,7 +107,7 @@ async function verifyMobileToken(req) {
   const header = decodeHeader(token)
 
   // Try federated first (cheap header-only check on `iss` claim)
-  if (decodePayload(token).iss === 'auth.keyflow.me') {
+  if (decodePayload(token).iss === 'auth.keyflowae.com') {
     return verifyFederated(token, process.env.FEDERATED_JWT_SECRET, PRODUCT_AUD)
   }
   return verifyLegacy(token, process.env.NEXTAUTH_SECRET)
@@ -118,19 +118,19 @@ After Phase 2 stabilises we delete the legacy path. No user-visible break.
 
 ### 4.2 Product signin endpoints during rollout
 
-Each product's `/api/mobile/auth/signin` keeps working — some iOS apps in the wild will not upgrade immediately. New iOS builds talk to `auth.keyflow.me` instead. Both populate Keychain with the same JWT shape.
+Each product's `/api/mobile/auth/signin` keeps working — some iOS apps in the wild will not upgrade immediately. New iOS builds talk to `auth.keyflowae.com` instead. Both populate Keychain with the same JWT shape.
 
 ### 4.3 Membership provisioning
 
 Today, a user is created when they're invited to an organization (e.g. `/api/team/invites`). In Phase 2:
 
-- The invite flow continues to create the product-local `User` row **and** additionally POSTs to `auth.keyflow.me/api/memberships/link` with `{ email, product, product_user_id, tenantId, role }`.
+- The invite flow continues to create the product-local `User` row **and** additionally POSTs to `auth.keyflowae.com/api/memberships/link` with `{ email, product, product_user_id, tenantId, role }`.
 - The auth service either finds an existing identity by email or creates a new one, then records a membership row.
-- The invited user sets their password **on auth.keyflow.me** (or migrates their existing product password on first federated signin — see §6 migration).
+- The invited user sets their password **on auth.keyflowae.com** (or migrates their existing product password on first federated signin — see §6 migration).
 
 ---
 
-## 5. Auth service (`auth.keyflow.me`)
+## 5. Auth service (`auth.keyflowae.com`)
 
 ### 5.1 Endpoints
 
@@ -200,7 +200,7 @@ model Session {
 ### 5.3 Deployment
 
 - New ECS service `keyflow-auth-sg` in the existing cluster (re-use the LeaseFlow VPC/subnets — this service sits next to LeaseFlow infra).
-- New ALB target group + CloudFront distribution aliased to `auth.keyflow.me`.
+- New ALB target group + CloudFront distribution aliased to `auth.keyflowae.com`.
 - New secret `keyflow/auth/app-config` in Secrets Manager with `FEDERATED_JWT_SECRET_LEADSFLOW`, `…_DEALSFLOW`, `…_LEASEFLOW`, plus its own `DATABASE_URL` pointing at a new Postgres database (`keyflow_auth`).
 - GitHub OIDC CI pipeline mirrors the other products.
 
@@ -209,7 +209,7 @@ model Session {
 ## 6. Rollout plan
 
 ### Step 1 — ship the auth service (week 1)
-- Schema migration + endpoints behind `auth.keyflow.me`.
+- Schema migration + endpoints behind `auth.keyflowae.com`.
 - Provisioning: one-off script imports every existing product `User` as an `Identity` + `Membership`, keying by lowercased email. **Email collisions between products become the same Identity** (single `keyflow_uid`, multiple memberships). Flagged for review if password hashes differ significantly — defer those and tell the user to reset password.
 - Dark deploy: service is live, nothing calls it yet.
 
@@ -222,7 +222,7 @@ model Session {
 - Each iOS app updates to depend on it. Login UI, Keychain, token refresh all route through the shared package.
 - Phase 1 device binding work moves into the package.
 
-### Step 4 — flip iOS apps to `auth.keyflow.me` (week 2)
+### Step 4 — flip iOS apps to `auth.keyflowae.com` (week 2)
 - Rolled out build-by-build, staged via TestFlight.
 - Feature flag on the iOS side: `useFederatedAuth = true`. Toggleable via remote config so we can back out fast.
 - Old iOS builds keep hitting product-local signin — we keep that endpoint alive indefinitely.
@@ -241,7 +241,7 @@ model Session {
 - **Key separation**: one federated signing secret per product. Leaking the DealsFlow key can't forge LeaseFlow tokens.
 - **aud enforcement**: mandatory check, not optional. A handoff-to-LeadsFlow token cannot be used against DealsFlow.
 - **deviceId preserved**: Phase 1's device claim carries through federated tokens unchanged.
-- **Session revocation**: `auth.keyflow.me/api/signout` marks the session row revoked. Product `verifyMobileToken` does a 1-minute-cached check against the session API for federated tokens (small overhead, big value — currently no product has mobile session revocation).
+- **Session revocation**: `auth.keyflowae.com/api/signout` marks the session row revoked. Product `verifyMobileToken` does a 1-minute-cached check against the session API for federated tokens (small overhead, big value — currently no product has mobile session revocation).
 - **Admin-initiated block**: `Identity.blockedAt` is the single block switch. Setting it revokes all sessions across all products at the next verify.
 
 ---
@@ -260,9 +260,9 @@ Phase 3 would either: (a) collapse product `User` tables into memberships on the
 
 1. **Password migration** — do we force reset on first federated signin, or transparently migrate the bcrypt hash from the product DB to the auth service? Recommend transparent migration (one-time script + on-signin fallback) unless legal flags a reason not to.
 2. **MFA** — enable TOTP on the auth service on day one, or defer to a follow-up? Day one adds ~1 day of work.
-3. **Who owns the Sentry org for `auth.keyflow.me`?** — add it as a 4th project? (Leaning yes.)
+3. **Who owns the Sentry org for `auth.keyflowae.com`?** — add it as a 4th project? (Leaning yes.)
 4. **Rate limit cost** — `rateLimit` is in-memory per instance today. The auth service will have multiple instances behind an ALB; in-memory drift makes brute-force detection weaker. Do we pull in Redis/ElastiCache now or later?
-5. **Email delivery** — reuse LeaseFlow's SES setup, or provision a fresh SES identity for `auth.keyflow.me`? Reuse is faster; fresh is cleaner for deliverability reputation.
+5. **Email delivery** — reuse LeaseFlow's SES setup, or provision a fresh SES identity for `auth.keyflowae.com`? Reuse is faster; fresh is cleaner for deliverability reputation.
 
 ---
 
@@ -272,6 +272,6 @@ Phase 3 would either: (a) collapse product `User` tables into memberships on the
 - [ ] Sign off on endpoint list (§5.1)
 - [ ] Sign off on schema (§5.2)
 - [ ] Answer open questions (§9)
-- [ ] Approve new ECS service + CloudFront distribution + Route 53 record for `auth.keyflow.me`
+- [ ] Approve new ECS service + CloudFront distribution + Route 53 record for `auth.keyflowae.com`
 - [ ] Approve new RDS/Postgres database `keyflow_auth`
 - [ ] Provide (or approve creation of) a 4th Sentry project
