@@ -1,7 +1,7 @@
 # Keyflow Website — CLAUDE.md
 
 > Marketing and public website for Keyflow.
-> Part of the Keyflow platform (keyflow.me).
+> Part of the Keyflow platform (keyflowae.com).
 
 @import ~/.claude/keyflow-knowledge/products.md
 @import ~/.claude/keyflow-knowledge/design/brand.md
