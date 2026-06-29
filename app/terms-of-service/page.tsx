@@ -58,7 +58,7 @@ export default function TermsOfServicePage() {
           <h2>2. Definitions</h2>
           <ul>
             <li><strong>&ldquo;Services&rdquo;</strong> means the Keyflow platform and all products offered by Keyflow, including but not limited to LeaseFlow, LeadsFlow, Keyflow Connect, and the Keyflow website (keyflowae.com).</li>
-            <li><strong>&ldquo;LeaseFlow&rdquo;</strong> means the property management platform available at leaseflow.keyflow.me, providing lease management, tenant management, property management, owner portals, compliance, and financial tracking for real estate agencies.</li>
+            <li><strong>&ldquo;LeaseFlow&rdquo;</strong> means the property management platform available at leaseflow.keyflowae.com, providing lease management, tenant management, property management, owner portals, compliance, and financial tracking for real estate agencies.</li>
             <li><strong>&ldquo;LeadsFlow&rdquo;</strong> means the real estate CRM available at leadsflow.me, providing lead capture, distribution, tracking, analytics, and team management for real estate agencies.</li>
             <li><strong>&ldquo;Keyflow Connect&rdquo;</strong> (or &ldquo;Connect&rdquo;) means the communication hub available at connect.keyflowae.com, providing WhatsApp Business API and email integration for real estate agencies.</li>
             <li><strong>&ldquo;Content&rdquo;</strong> means all data, text, files, documents, images, and other materials you upload to or transmit through the Services.</li>

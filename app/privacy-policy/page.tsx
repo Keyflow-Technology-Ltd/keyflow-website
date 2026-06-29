@@ -371,7 +371,7 @@ export default function PrivacyPolicyPage() {
           <ul>
             <li>Each of our products (LeaseFlow, LeadsFlow, Connect)</li>
             <li>The Keyflow website (keyflowae.com)</li>
-            <li>Our Terms of Service (keyflow.me/terms-of-service)</li>
+            <li>Our Terms of Service (keyflowae.com/terms-of-service)</li>
             <li>Contracts and agreements as necessary or appropriate</li>
           </ul>
 

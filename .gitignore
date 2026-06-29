@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# --- cleanup 2026-06 ---
+# unrelated nested project — relocate out of this repo (left on disk, not deleted)
+/void-watch/
+# local agent/dev tooling + design-iteration screenshots
+/.playwright-mcp/
+/.superpowers/
+/.artifacts/
