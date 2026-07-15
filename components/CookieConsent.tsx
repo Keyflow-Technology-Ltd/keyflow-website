@@ -8,22 +8,32 @@ import Link from "next/link";
  *
  * - Essential cookies are always enabled (session, CSRF, routing)
  * - Analytics cookies require explicit opt-in consent
- * - Preference persisted in localStorage
- * - Only shown to first-time visitors (no existing preference)
+ * - Preference persisted in localStorage, versioned against the current
+ *   ToS/Privacy Policy version (CONSENT_VERSION)
+ * - Shown to first-time visitors AND re-shown when the stored consent
+ *   predates the current policy version (fail-closed: unreadable or
+ *   unversioned consent means the banner is shown again)
  */
 
 const COOKIE_CONSENT_KEY = "keyflow_cookie_consent";
+const CONSENT_VERSION = "2.0";
 
 type ConsentPreference = {
   essential: true; // Always true — cannot be disabled
   analytics: boolean;
+  version: string;
   timestamp: string;
 };
 
 function shouldShowBanner(): boolean {
   if (typeof window === "undefined") return false;
   try {
-    return !localStorage.getItem(COOKIE_CONSENT_KEY);
+    const stored = localStorage.getItem(COOKIE_CONSENT_KEY);
+    if (!stored) return true;
+    const preference = JSON.parse(stored) as Partial<ConsentPreference>;
+    // Re-show the banner when the stored consent predates the current
+    // policy version (legacy entries without a version count as "0").
+    return (preference.version ?? "0") < CONSENT_VERSION;
   } catch {
     return true;
   }
@@ -37,6 +47,7 @@ export default function CookieConsent() {
     const preference: ConsentPreference = {
       essential: true,
       analytics,
+      version: CONSENT_VERSION,
       timestamp: new Date().toISOString(),
     };
     try {
