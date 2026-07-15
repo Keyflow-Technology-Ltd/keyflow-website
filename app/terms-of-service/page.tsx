@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Keyflow Technology Ltd",
+  title: "Terms of Service — KeyFlow Technology Ltd",
   description:
-    "Terms of Service for Keyflow Technology Ltd covering LeaseFlow, LeadsFlow, Connect, and all Keyflow services. DIFC governed.",
+    "Terms of Service for KeyFlow Technology Ltd covering the Keyflow platform (Arc, Atlas, Connect, Ledger, Console, Keys), LeaseFlow, LeadsFlow, and all KeyFlow websites. DIFC governed. Version 2.0, effective 22 July 2026.",
 };
 
 export default function TermsOfServicePage() {
@@ -24,9 +24,8 @@ export default function TermsOfServicePage() {
           Terms of Service
         </h1>
         <p className="text-[#888] mb-2 text-sm">
-          <strong className="text-[#FAFAFA]">Effective:</strong> 22 February 2026 &nbsp;|&nbsp;{" "}
-          <strong className="text-[#FAFAFA]">Version:</strong> 1.0 &nbsp;|&nbsp;{" "}
-          <strong className="text-[#FAFAFA]">Ref:</strong> TOS-2026-001
+          <strong className="text-[#FAFAFA]">Effective:</strong> 22 July 2026 &nbsp;|&nbsp;{" "}
+          <strong className="text-[#FAFAFA]">Version:</strong> 2.0
         </p>
 
         <hr className="my-8 border-[#333]" />
@@ -44,169 +43,250 @@ export default function TermsOfServicePage() {
           [&_a]:text-[#C9A87C] [&_a]:hover:underline
           [&_strong]:text-white"
         >
-          <h2>1. Agreement to Terms</h2>
+          <p><strong>KeyFlow Technology Ltd</strong></p>
+          <table>
+            <tbody>
+              <tr><td><strong>Version</strong></td><td><strong>2.0</strong> — effective <strong>22 July 2026</strong></td></tr>
+              <tr><td><strong>Supersedes</strong></td><td>Version 1.x (published under the superseded keyflow.me domain, which is no longer associated with KeyFlow)</td></tr>
+              <tr><td><strong>Canonical URL</strong></td><td><a href="/terms-of-service">keyflowae.com/terms-of-service</a> — the single authoritative copy, linked from every KeyFlow product</td></tr>
+              <tr><td><strong>Applies to</strong></td><td>All KeyFlow services and websites (Section 3)</td></tr>
+            </tbody>
+          </table>
+
+          <h2>1. Who we are, and who these Terms bind</h2>
           <p>
-            These Terms of Service (&ldquo;Terms&rdquo;) constitute a legally binding agreement between you (&ldquo;User&rdquo;, &ldquo;you&rdquo;, or &ldquo;your&rdquo;) and <strong>Keyflow Technology Ltd</strong> (&ldquo;Keyflow&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;), a company registered in the Dubai International Financial Centre (DIFC License No. CL-12435, Reference SR-661431), governing your access to and use of the Keyflow platform and services.
+            <strong>1.1</strong> These Terms of Service (&ldquo;<strong>Terms</strong>&rdquo;) are an agreement between <strong>KeyFlow Technology Ltd</strong> (&ldquo;<strong>KeyFlow</strong>&rdquo;, &ldquo;<strong>we</strong>&rdquo;), a company licensed in the Dubai International Financial Centre under Commercial Licence <strong>CL-12435</strong>, with its registered address at Unit GA-00-SZ-01-FX-07, Level 1, Gate Avenue South Zone, DIFC, Dubai, UAE, and the real-estate agency that subscribes to the Services (the &ldquo;<strong>Agency</strong>&rdquo;, &ldquo;<strong>you</strong>&rdquo;).
           </p>
           <p>
-            By creating an account, accessing, or using any of our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms, our <a href="/privacy-policy">Data Protection Policy</a>, and any additional terms referenced herein.
+            <strong>1.2</strong> The Services are business software. <strong>The Agency is our customer.</strong> Individuals access the Services under the Agency&apos;s subscription: the Agency&apos;s staff and contractors (&ldquo;<strong>Authorised Users</strong>&rdquo;) and, through the Keys application, the Agency&apos;s own clients — owners, tenants, buyers and sellers (&ldquo;<strong>Clients</strong>&rdquo;). These Terms bind the Agency, and the Agency is responsible for the acts and omissions of its Authorised Users as if they were its own. Clients&apos; use of Keys is enabled by the Agency&apos;s subscription and governed by these Terms and the notices presented in the product.
           </p>
           <p>
-            If you are entering into these Terms on behalf of a company, organization, or other legal entity (&ldquo;Agency&rdquo;), you represent and warrant that you have the authority to bind that entity to these Terms.
+            <strong>1.3</strong> Visitors browsing our websites (Section 3.4) without an account are bound by Sections 3.4, 5, 9, 12, 13 and 15 of these Terms and by our Privacy Policy at <a href="/privacy-policy">keyflowae.com/privacy-policy</a>.
           </p>
 
-          <h2>2. Definitions</h2>
-          <ul>
-            <li><strong>&ldquo;Services&rdquo;</strong> means the Keyflow platform and all products offered by Keyflow, including but not limited to LeaseFlow, LeadsFlow, Keyflow Connect, and the Keyflow website (keyflowae.com).</li>
-            <li><strong>&ldquo;LeaseFlow&rdquo;</strong> means the property management platform available at leaseflow.keyflowae.com, providing lease management, tenant management, property management, owner portals, compliance, and financial tracking for real estate agencies.</li>
-            <li><strong>&ldquo;LeadsFlow&rdquo;</strong> means the real estate CRM available at leadsflow.me, providing lead capture, distribution, tracking, analytics, and team management for real estate agencies.</li>
-            <li><strong>&ldquo;Keyflow Connect&rdquo;</strong> (or &ldquo;Connect&rdquo;) means the communication hub available at connect.keyflowae.com, providing WhatsApp Business API and email integration for real estate agencies.</li>
-            <li><strong>&ldquo;Content&rdquo;</strong> means all data, text, files, documents, images, and other materials you upload to or transmit through the Services.</li>
-            <li><strong>&ldquo;Agency&rdquo;</strong> means the real estate agency, brokerage, or property management company that has registered for the Services.</li>
-            <li><strong>&ldquo;Client&rdquo;</strong> means any property owner, tenant, buyer, seller, or other individual whose data is processed through the Services on behalf of an Agency.</li>
-            <li><strong>&ldquo;Lead&rdquo;</strong> means a prospective client whose contact information is captured and managed through LeadsFlow.</li>
-            <li><strong>&ldquo;Contact&rdquo;</strong> means an individual whose contact information is used for communication through Connect.</li>
-          </ul>
-
-          <h2>3. Eligibility</h2>
+          <h2>2. Acceptance</h2>
           <p>
-            To use the Services, you must: (a) be at least 18 years of age; (b) have the legal capacity to enter into a binding agreement; (c) not be prohibited from receiving the Services under the laws of the DIFC, the UAE, or any other applicable jurisdiction; and (d) hold any necessary licenses or permits required by applicable law (including, where applicable, a valid RERA broker license issued by the Dubai Land Department).
+            <strong>2.1</strong> The Agency accepts these Terms when a person acting for it clicks to accept them in the product or signs an order or agreement referencing them. <strong>The person accepting warrants that they are authorised to bind the Agency.</strong>
+          </p>
+          <p>
+            <strong>2.2</strong> The products present a versioned consent gate. Where we update these Terms (Section 14), the Agency&apos;s continued use after notice constitutes acceptance of non-material updates; material updates must be re-accepted through the consent gate before continued use.
           </p>
 
-          <h2>4. Account Registration and Security</h2>
-          <p><strong>4.1 Registration.</strong> You must provide accurate, current, and complete information during registration and keep your account information updated.</p>
-          <p><strong>4.2 Account Security.</strong> You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must immediately notify us at <a href="mailto:support@keyflowae.com">support@keyflowae.com</a> if you become aware of any unauthorized use of your account.</p>
-          <p><strong>4.3 Multi-Tenant Isolation.</strong> Each Agency&apos;s data is logically isolated within the Services. You must not attempt to access, view, or modify data belonging to other Agencies or their Clients.</p>
-
-          <h2>5. License and Restrictions</h2>
-          <p><strong>5.1 License Grant.</strong> Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to access and use the Services for your internal business purposes.</p>
-          <p><strong>5.2 Restrictions.</strong> You agree not to: (a) sublicense, sell, resell, transfer, or distribute access to the Services; (b) modify, adapt, translate, reverse engineer, decompile, or disassemble any portion of the Services; (c) use the Services to build a competing product or service; (d) use automated means (bots, scrapers, etc.) to access the Services except through our published APIs; (e) exceed any rate limits or usage restrictions communicated to you.</p>
-
-          <h2>6. User Content and Data</h2>
-          <p><strong>6.1 Your Content.</strong> You retain ownership of all Content you upload to the Services. By uploading Content, you grant us a worldwide, non-exclusive license to use, store, process, and transmit your Content solely to provide the Services to you.</p>
-          <p><strong>6.2 Responsibility for Content.</strong> You are solely responsible for the accuracy, legality, and appropriateness of your Content. You represent and warrant that:</p>
+          <h2>3. The Services</h2>
+          <p>
+            <strong>3.1</strong> &ldquo;<strong>Services</strong>&rdquo; means the KeyFlow software services made available to the Agency, in three tiers:
+          </p>
           <ul>
-            <li>You have the right to upload and use the Content</li>
-            <li>Your Content does not infringe any third-party intellectual property rights</li>
-            <li>Your Content complies with all applicable laws and regulations, including the DIFC Data Protection Law 2020</li>
-            <li>You have obtained all necessary consents from Clients and Contacts whose personal data you upload or process through the Services</li>
+            <li><strong>(a) The next-generation Keyflow platform</strong> — six surfaces (<strong>Arc</strong> for opportunities, <strong>Atlas</strong> for property and listing operations, <strong>Connect</strong> for client messaging, <strong>Ledger</strong> for cheques and payments, <strong>Console</strong> for organisation administration, and <strong>Keys</strong> for the Agency&apos;s Clients), with companion iOS applications. The platform is <strong>pre-launch</strong>: it currently operates in a staging environment and becomes generally available at production launch (target <strong>September 2026</strong>). Pre-launch access is beta access and Section 11 applies.</li>
+            <li><strong>(b) The first-generation products LeaseFlow and LeadsFlow</strong> — operational and in use today, and <strong>being wound down in Q4 2026</strong> following the Agency&apos;s migration to the next-generation platform. We will support the migration and dispose of residual first-generation data in accordance with the Data Processing Addendum (Section 8).</li>
+            <li><strong>(c) DealsFlow</strong> — discontinued on 15 July 2026 and no longer offered.</li>
           </ul>
-          <p><strong>6.3 Data Protection Responsibilities.</strong> You acknowledge that your Agency acts as the party with the direct relationship to Clients and Contacts. Your Agency is responsible for ensuring it has an appropriate lawful basis for collecting personal data and must inform Clients and Contacts about data processing in accordance with applicable data protection laws. Keyflow processes personal data in accordance with our <a href="/privacy-policy">Data Protection Policy</a>.</p>
-          <p><strong>6.4 Cross-Product Data.</strong> Where you use multiple Services (e.g., LeaseFlow and Connect), your Content may be linked across Services to provide integrated functionality. This cross-product linking is governed by the Data Protection Policy.</p>
+          <p>
+            <strong>3.2</strong> Certain capabilities are described in the products or our materials as planned or pending activation — including WhatsApp messaging, AI-assisted drafting, production payment collection through our open-banking provider, and Dubai Land Department data integrations. <strong>These form part of the Services only if and when we activate them</strong>, and activation of any capability involving new data flows is subject to the safeguards described in the Data Processing Addendum and our Privacy Policy.
+          </p>
+          <p>
+            <strong>3.3</strong> We may improve, extend or modify the Services. We will not materially degrade the core functionality the Agency has subscribed to without the notice described in Section 14.
+          </p>
+          <p>
+            <strong>3.4</strong> &ldquo;<strong>Websites</strong>&rdquo; means our public websites, including keyflowae.com. The Websites are provided for information; product descriptions on them do not form part of any contract unless confirmed in an order.
+          </p>
 
-          <h2>7. Acceptable Use &mdash; Keyflow Connect</h2>
-          <p>In addition to the general restrictions in Section 5, your use of Keyflow Connect is subject to the following:</p>
-          <p><strong>7.1 WhatsApp Business API Compliance.</strong> When using Connect to send WhatsApp messages, you agree to comply with Meta&apos;s WhatsApp Business Policy and Commerce Policy, only send messages to contacts who have initiated a conversation or consented to receive messages, use approved templates for business-initiated messages, and not send spam, unsolicited marketing, or bulk messaging that violates Meta&apos;s policies.</p>
-          <p><strong>7.2 Email Communications.</strong> When using Connect to send emails, you agree to comply with applicable anti-spam laws, not send unsolicited marketing without consent, include accurate sender identification, and honor unsubscribe requests promptly.</p>
-          <p><strong>7.3 Communication Recording.</strong> You acknowledge that all messages sent and received through Connect are stored for conversation threading, audit logging, and service delivery. You are responsible for informing your Contacts that their communications are processed and stored by Keyflow.</p>
+          <h2>4. Accounts and UAE PASS identity</h2>
+          <p>
+            <strong>4.1 Next-generation platform.</strong> Sign-in is through <strong>UAE PASS</strong>, the UAE&apos;s national digital identity. Identity is verified at the source: <strong>KeyFlow does not set, hold or manage passwords</strong> for the platform. Each account is bound to a verified individual identity, and actions taken in the platform are attributed to that identity in the audit record.
+          </p>
+          <p>
+            <strong>4.2</strong> UAE PASS is operated by Digital Dubai as an independent government service under its own terms and privacy policy. Authentication and digital signing occur at the individual&apos;s initiation; KeyFlow is not responsible for the availability of UAE PASS or for its handling of personal data.
+          </p>
+          <p>
+            <strong>4.3 First-generation products</strong> use email-and-password credentials until wind-down. The Agency must ensure its Authorised Users keep credentials confidential and must notify us promptly at <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a> of any suspected unauthorised access to any account.
+          </p>
+          <p>
+            <strong>4.4</strong> The Agency controls access for its organisation through Console — inviting and removing Authorised Users and granting or revoking capabilities. The Agency is responsible for keeping those grants current, including removing leavers without delay.
+          </p>
 
-          <h2>8. Fees and Payment</h2>
-          <p><strong>8.1 Subscription Fees.</strong> Use of the Services requires payment of subscription fees as specified in your selected plan. Fees are billed in advance on a monthly or annual basis.</p>
-          <p><strong>8.2 Payment Terms.</strong> You agree to provide valid payment information and authorize us to charge your payment method. All fees are non-refundable except as required by applicable law.</p>
-          <p><strong>8.3 Price Changes.</strong> We may change our fees upon 30 days&apos; written notice. Continued use of the Services after a price change constitutes acceptance of the new fees.</p>
-          <p><strong>8.4 Taxes.</strong> All fees are exclusive of applicable taxes, including UAE Value Added Tax (VAT) at 5%. You are responsible for payment of all applicable taxes.</p>
-
-          <h2>9. Intellectual Property Rights</h2>
-          <p><strong>9.1 Our IP.</strong> The Services, including all software, designs, text, graphics, logos, icons, and other materials (excluding your Content), are owned by Keyflow Technology Ltd and protected by copyright, trademark, and other intellectual property laws of the DIFC, the UAE, and international treaties.</p>
-          <p><strong>9.2 Trademarks.</strong> &ldquo;Keyflow&rdquo;, &ldquo;LeaseFlow&rdquo;, &ldquo;LeadsFlow&rdquo;, &ldquo;Keyflow Connect&rdquo;, and our logos are trademarks of Keyflow Technology Ltd. You may not use our trademarks without our prior written permission.</p>
-          <p><strong>9.3 Feedback.</strong> If you provide us with feedback, suggestions, or ideas about the Services, we may use that feedback without any obligation or compensation to you.</p>
-
-          <h2>10. Third-Party Services and Integrations</h2>
-          <p><strong>10.1 Third-Party Integrations.</strong> The Services may integrate with third-party services, including property portals (PropertyFinder, Bayut, Dubizzle), Meta (Facebook/Instagram lead ads, WhatsApp Business API), UAE PASS for identity verification, and government systems (RERA, Ejari, Dubai Land Department).</p>
-          <p><strong>10.2 Third-Party Terms.</strong> Your use of third-party services through the Keyflow platform is subject to the respective terms of those providers. We are not responsible for the availability, accuracy, or content of third-party services.</p>
-
-          <h2>11. Service Availability and Support</h2>
-          <p><strong>11.1 Uptime.</strong> We strive to provide reliable Service availability but do not guarantee uninterrupted access. Services may be temporarily unavailable due to maintenance, updates, or circumstances beyond our reasonable control.</p>
-          <p><strong>11.2 Modifications.</strong> We reserve the right to modify, enhance, suspend, or discontinue any part of the Services with reasonable notice. Material changes to core functionality will be communicated at least 30 days in advance.</p>
-          <p><strong>11.3 Support.</strong> Technical support is provided via email at <a href="mailto:support@keyflowae.com">support@keyflowae.com</a> during business hours (Sunday through Thursday, 9:00 AM to 6:00 PM GST).</p>
-
-          <h2>12. Prohibited Conduct</h2>
-          <p>You agree not to:</p>
+          <h2>5. Acceptable use</h2>
+          <p>The Agency must not, and must ensure its Authorised Users and Clients do not:</p>
           <ul>
-            <li>Use the Services for any illegal purpose or in violation of DIFC law, UAE federal law, RERA regulations, or data protection laws</li>
-            <li>Upload malicious code, viruses, or harmful content</li>
-            <li>Attempt to gain unauthorized access to the Services, other users&apos; accounts, or our infrastructure</li>
-            <li>Harass, abuse, threaten, or harm other users, their Clients, or their Contacts</li>
-            <li>Use the Services to send spam or unsolicited communications</li>
-            <li>Violate any applicable data protection or privacy laws, including the DIFC Data Protection Law 2020</li>
-            <li>Process special categories of personal data through the Services without our prior written consent and appropriate safeguards</li>
+            <li>(a) use the Services in breach of any applicable law, including UAE and DIFC law and RERA rules;</li>
+            <li>(b) upload or transmit unlawful, infringing or malicious content, or instruct the processing of Special Categories of Personal Data through the Services;</li>
+            <li>(c) attempt to access another agency&apos;s data, probe, scan or test the vulnerability of the Services, or circumvent authentication, tenant isolation or capability controls;</li>
+            <li>(d) reverse-engineer, copy or resell the Services, or access them to build a competing product;</li>
+            <li>(e) use the Services to send spam or unsolicited communications in breach of applicable law;</li>
+            <li>(f) impose an unreasonable load on the Services through automated means, or use scraping tools against the Services or Websites; or</li>
+            <li>(g) misrepresent an identity, or sign or submit documents without authority to do so.</li>
           </ul>
 
-          <h2>13. Data Retention and Deletion</h2>
-          <p><strong>13.1 Active Accounts.</strong> While your account is active, we retain your Content as necessary to provide the Services.</p>
-          <p><strong>13.2 Account Termination.</strong> Upon termination, we retain your data for 30 days for account reactivation. After 30 days, Content is securely deleted or anonymized, except as required by law.</p>
-          <p><strong>13.3 Legal Retention.</strong> Certain data is retained beyond termination as required by law:</p>
+          <h2>6. Agency responsibilities</h2>
+          <p>
+            <strong>6.1 Lawful basis.</strong> The Agency determines the purposes of processing its Clients&apos; personal data in the Services. The Agency warrants that it has a lawful basis for the processing it instructs, that it has given its clients the information required by applicable data protection law, and that its instructions to KeyFlow are lawful (this mirrors clause 2.2 of the Data Processing Addendum).
+          </p>
+          <p>
+            <strong>6.2 Accuracy.</strong> The Agency is responsible for the accuracy and completeness of the data it and its Authorised Users enter into the Services, and for correcting it when it learns of inaccuracy.
+          </p>
+          <p>
+            <strong>6.3 Regulatory compliance.</strong> The Agency remains solely responsible for its own regulatory obligations as a real-estate business — including RERA licensing and advertising rules, Ejari registration obligations, and anti-money-laundering obligations. The Services support these workflows; they do not discharge the Agency&apos;s obligations.
+          </p>
+          <p>
+            <strong>6.4 Its people.</strong> The Agency is responsible for its Authorised Users&apos; compliance with these Terms and for the consequences of the capabilities it grants them.
+          </p>
+
+          <h2>7. Fees</h2>
+          <p>
+            <strong>7.1</strong> The Agency&apos;s current use of the Services is under an <strong>unpaid pilot / beta arrangement</strong>: no fees are payable until the parties agree a paid plan in writing. Commercial terms to be settled before or at general availability:
+          </p>
           <ul>
-            <li>Audit logs: 7 years minimum (DIFC regulatory requirement)</li>
-            <li>Consent records: 7 years minimum (DIFC accountability requirement)</li>
-            <li>Communication records (Connect): 7 years (audit trail requirement)</li>
-            <li>Lease and property records: 7 years (RERA, Ejari, DIFC requirements)</li>
+            <li>pricing plans and included usage;</li>
+            <li>invoicing cycle and payment terms;</li>
+            <li>taxes: fees exclusive of VAT and similar taxes, which the Agency bears;</li>
+            <li>consequences of late payment (interest, suspension after notice).</li>
           </ul>
-          <p><strong>13.4 Data Export.</strong> You may request a data export at any time through the privacy settings in the applicable Service or by contacting <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a>. Requests are fulfilled within 30 days.</p>
+          <p>
+            <strong>7.2</strong> We will give the Agency reasonable advance written notice before any transition from unpaid pilot terms to paid terms, and paid terms take effect only on the Agency&apos;s acceptance of an order or updated Terms.
+          </p>
 
-          <h2>14. Privacy and Data Protection</h2>
-          <p><strong>14.1 Privacy Policy.</strong> Our collection, use, and protection of personal data is governed by the <a href="/privacy-policy">Data Protection Policy</a>, which is incorporated into these Terms by reference.</p>
-          <p><strong>14.2 Data Subject Rights.</strong> Individuals whose personal data is processed have rights under the DIFC Data Protection Law 2020, including access, rectification, erasure, restriction, portability, and objection.</p>
-          <p><strong>14.3 Data Processing.</strong> By using the Services, you acknowledge that personal data may be processed using AI and OCR technologies, and may be transferred to processors outside the DIFC with appropriate safeguards in place, as described in the Data Protection Policy.</p>
+          <h2>8. Data protection</h2>
+          <p>
+            <strong>8.1 The Data Processing Addendum published at <a href="/dpa">keyflowae.com/dpa</a> (the &ldquo;DPA&rdquo;) forms an integral part of these Terms.</strong> It is incorporated into these Terms by reference, and, in respect of the processing of personal data, <strong>the DPA prevails over these Terms</strong> to the extent of any conflict.
+          </p>
+          <p>
+            <strong>8.2</strong> For personal data the Agency&apos;s business puts into the Services (&ldquo;Agency Personal Data&rdquo; as defined in the DPA), <strong>the Agency is the Controller and KeyFlow is the Processor</strong>, acting on the Agency&apos;s documented instructions under the DPA. For platform account identity, security and audit records, KeyFlow acts as Controller as described in our Privacy Policy at <a href="/privacy-policy">keyflowae.com/privacy-policy</a>.
+          </p>
+          <p>
+            <strong>8.3</strong> The Services are hosted in <strong>AWS ap-southeast-1 (Singapore)</strong>, an adequate jurisdiction under the DIFC Data Protection Law. Sub-processors, international transfers and security measures are as set out in the DPA. <strong>UAE PASS / Digital Dubai and the Dubai Land Department are independent controllers of their own government services and are not sub-processors of KeyFlow.</strong>
+          </p>
+          <p>
+            <strong>8.4</strong> On the end of the Services, clause 4(g) of the DPA governs the return or deletion of Agency Personal Data, subject to the statutory retention carve-outs in KeyFlow&apos;s Retention &amp; Erasure Schedule (including the 7-year audit log and 15-year signed-document horizons).
+          </p>
 
-          <h2>15. Disclaimers</h2>
-          <p>THE SERVICES ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
-          <p>We do not warrant that the Services will be error-free or uninterrupted, that results obtained will be accurate or reliable, or that AI-generated analysis will replace professional judgement. You should consult appropriate professionals for legal, financial, and regulatory matters.</p>
+          <h2>9. Confidentiality</h2>
+          <p>
+            <strong>9.1</strong> Each party must keep confidential the non-public information it receives from the other in connection with the Services (including, for KeyFlow, the Agency&apos;s business data; and, for the Agency, non-public product, security and pricing information), use it only for the purposes of these Terms, and protect it with at least reasonable care.
+          </p>
+          <p>
+            <strong>9.2</strong> These obligations do not apply to information that is public through no fault of the recipient, already lawfully held, independently developed, or required to be disclosed by law or a competent authority — in which case the recipient gives prompt notice where lawful. They survive termination for five years, and indefinitely for personal data.
+          </p>
 
-          <h2>16. Limitation of Liability</h2>
-          <p>TO THE MAXIMUM EXTENT PERMITTED BY DIFC LAW: (a) we shall not be liable for any indirect, incidental, special, consequential, or punitive damages; (b) our total liability shall not exceed the amount you paid us in the 12 months preceding the event giving rise to liability; (c) these limitations do not apply to liability arising from gross negligence, wilful misconduct, death or personal injury, or any liability that cannot be excluded under DIFC law.</p>
+          <h2>10. Intellectual property</h2>
+          <p>
+            <strong>10.1</strong> KeyFlow and its licensors own the Services, the Websites, and all software, designs and documentation, including improvements. The Agency receives a <strong>non-exclusive, non-transferable licence</strong> to use the Services for its internal business during the term, for its Authorised Users and Clients.
+          </p>
+          <p>
+            <strong>10.2 The Agency owns its data.</strong> The Agency grants KeyFlow a licence to host, process, transmit and display Agency data solely to provide and secure the Services, as instructed under the DPA.
+          </p>
+          <p>
+            <strong>10.3</strong> If the Agency gives us feedback or suggestions, we may use them without restriction or obligation, provided doing so never identifies the Agency or discloses its confidential information.
+          </p>
+          <p>
+            <strong>10.4</strong> &ldquo;KeyFlow&rdquo;, the product names (Arc, Atlas, Connect, Ledger, Console, Keys, LeaseFlow, LeadsFlow) and associated logos are trademarks of KeyFlow. No rights in them are granted beyond what these Terms state.
+          </p>
 
-          <h2>17. Indemnification</h2>
-          <p>You agree to indemnify, defend, and hold harmless Keyflow Technology Ltd from any claims, liabilities, damages, losses, costs, or expenses arising out of your use of the Services, violation of these Terms, violation of any law, your Content, infringement of third-party rights, or messages sent through Connect that violate applicable laws or Meta&apos;s policies.</p>
+          <h2>11. Service levels and beta status</h2>
+          <p>
+            <strong>11.1 Pre-launch surfaces are beta.</strong> Until general availability, the next-generation platform is provided <strong>&ldquo;as is&rdquo; and &ldquo;as available&rdquo;</strong>: features may change or be withdrawn, data models may evolve, and availability is not guaranteed. We will take reasonable care, but beta access is provided without warranties or service-level commitments.
+          </p>
+          <p>
+            <strong>11.2</strong> The first-generation products are mature but in wind-down; they are maintained on a reasonable-efforts basis until migration completes in Q4 2026.
+          </p>
+          <p>
+            <strong>11.3</strong> A production service-level commitment for the next-generation platform will be published at or before general availability, covering target uptime, support channels and response times.
+          </p>
+          <p>
+            <strong>11.4</strong> We may perform maintenance, with advance notice where it is planned and material. Nothing in this Section limits our obligations under the DPA.
+          </p>
 
-          <h2>18. Termination</h2>
-          <p><strong>18.1 By You.</strong> You may terminate your subscription at any time through your account settings or by contacting <a href="mailto:support@keyflowae.com">support@keyflowae.com</a>.</p>
-          <p><strong>18.2 By Us.</strong> We may suspend or terminate your access immediately if you materially breach these Terms, payment is overdue by more than 15 days, we are required by law, or your use poses a security risk.</p>
-          <p><strong>18.3 Effect of Termination.</strong> Upon termination, your right to use the Services ceases immediately, data retention provisions (Section 13) apply, and surviving provisions (payment, disclaimers, liability, indemnification, governing law) continue in effect.</p>
+          <h2>12. Suspension and termination</h2>
+          <p>
+            <strong>12.1 Suspension.</strong> We may suspend some or all access — giving prior notice where practicable, and otherwise notice as soon as practicable — where: (a) the Agency materially breaches these Terms (including Section 5) and, where curable, fails to cure within 14 days of notice; (b) suspension is necessary to protect the security or integrity of the Services or other customers&apos; data; (c) we are required to do so by law or a competent authority; or (d) undisputed fees (once payable) remain unpaid after notice. We will limit suspension in scope and duration to what is necessary.
+          </p>
+          <p>
+            <strong>12.2 Termination.</strong> Either party may terminate: (a) for convenience on <strong>30 days&apos; written notice</strong> (during the unpaid pilot, either party may terminate on 14 days&apos; notice); or (b) immediately for a material breach that is not cured within 14 days of notice, or that is incapable of cure.
+          </p>
+          <p>
+            <strong>12.3 Effect.</strong> On termination or expiry: access ends; each party returns or destroys the other&apos;s confidential information on request; and <strong>Agency Personal Data is returned or deleted at the Agency&apos;s choice in accordance with clause 4(g) of the DPA</strong> and the Retention &amp; Erasure Schedule, save where statute requires retention (in which case the data is isolated and processed for no other purpose). Sections 8 (in respect of surviving processing), 9, 10, 12.3, 13, 15 and 16 survive.
+          </p>
 
-          <h2>19. Dispute Resolution and Governing Law</h2>
-          <p><strong>19.1 Governing Law.</strong> These Terms shall be governed by and construed in accordance with the laws of the Dubai International Financial Centre (DIFC).</p>
-          <p><strong>19.2 Jurisdiction.</strong> Any disputes shall be subject to the exclusive jurisdiction of the DIFC Courts.</p>
-          <p><strong>19.3 Informal Resolution.</strong> Before filing any formal dispute, you agree to contact us at <a href="mailto:legal@keyflowae.com">legal@keyflowae.com</a> to seek informal resolution. We will attempt to resolve disputes within 30 days.</p>
+          <h2>13. Liability</h2>
+          <p>
+            <strong>13.1 Nothing in these Terms excludes or limits</strong> liability for fraud or wilful misconduct, or any liability that cannot be excluded or limited under applicable law. Consistent with clause 6.1 of the DPA, nothing limits a party&apos;s liability for its own breach of the DIFC Data Protection Law that results in an administrative fine or Data Subject compensation attributable to that party&apos;s non-compliance.
+          </p>
+          <p>
+            <strong>13.2</strong> Subject to Section 13.1, neither party is liable for indirect or consequential loss, loss of profits, revenue, goodwill or anticipated savings, or loss or corruption of data to the extent caused by the other party&apos;s failure to follow documented backup or export guidance.
+          </p>
+          <p>
+            <strong>13.3</strong> Subject to Sections 13.1 and 13.2, each party&apos;s aggregate liability arising out of or in connection with these Terms in any 12-month period is capped at <strong>the greater of (a) the fees paid or payable by the Agency for the Services in the 12 months preceding the first event giving rise to liability, and (b) AED 10,000</strong>.
+          </p>
+          <p>
+            <strong>13.4</strong> The Services depend on third-party services outside our control — including UAE PASS, government registries, app stores, and telecommunications networks. We are not liable for their unavailability or acts, without prejudice to our obligations for our sub-processors under the DPA.
+          </p>
 
-          <h2>20. Changes to These Terms</h2>
-          <p>We may modify these Terms from time to time. Material changes will be communicated at least 30 days before taking effect. Continued use after the effective date constitutes acceptance. The current version is always available at the Terms of Service page within each product and at <a href="/terms-of-service">keyflowae.com/terms-of-service</a>.</p>
+          <h2>14. Changes to these Terms</h2>
+          <p>
+            <strong>14.1</strong> We may update these Terms. We will give the Agency at least <strong>14 days&apos; notice</strong> of changes by email to the Agency&apos;s registered administrative contact and in-product notice, identifying the new version and its effective date.
+          </p>
+          <p>
+            <strong>14.2 Material changes</strong> — changes that reduce the Agency&apos;s rights, expand its obligations, introduce or increase fees, or alter the data-protection position — take effect for the Agency only on <strong>re-acceptance through the in-product consent gate</strong>. If the Agency does not accept, it may continue on the prior version until the end of its then-current term or 60 days, whichever is longer, and may terminate under Section 12.2(a) without penalty.
+          </p>
+          <p>
+            <strong>14.3</strong> Non-material changes take effect on the stated date; continued use after notice constitutes acceptance. The version and effective date are always displayed at <a href="/terms-of-service">keyflowae.com/terms-of-service</a>.
+          </p>
 
-          <h2>21. General Provisions</h2>
-          <p><strong>21.1 Entire Agreement.</strong> These Terms, together with the Data Protection Policy and any subscription agreement, constitute the entire agreement between you and Keyflow.</p>
-          <p><strong>21.2 Severability.</strong> If any provision is found unenforceable, the remaining provisions remain in effect.</p>
-          <p><strong>21.3 Waiver.</strong> Our failure to enforce any provision does not constitute a waiver.</p>
-          <p><strong>21.4 Assignment.</strong> You may not assign these Terms without our written consent. We may assign without restriction in connection with a merger, acquisition, or asset sale.</p>
-          <p><strong>21.5 Force Majeure.</strong> We shall not be liable for failures due to causes beyond reasonable control, including natural disasters, war, pandemics, government actions, power failures, or Internet disruptions.</p>
-          <p><strong>21.6 Notices.</strong> Notices to us should be sent to <a href="mailto:legal@keyflowae.com">legal@keyflowae.com</a>. Notices to you will be sent to your account email.</p>
+          <h2>15. Governing law and jurisdiction</h2>
+          <p>
+            These Terms, the DPA and any dispute or claim arising out of or in connection with them (including non-contractual disputes) are governed by the <strong>laws of the Dubai International Financial Centre</strong>, and the parties submit to the <strong>exclusive jurisdiction of the DIFC Courts</strong>.
+          </p>
 
-          <h2>22. Contact Information</h2>
-          <div className="bg-[#1A1A1A] p-5 rounded-lg my-4">
-            <p className="text-white font-semibold">Keyflow Technology Ltd</p>
-            <p>Unit GA-00-SZ-01-FX-07, Level 1, Gate Avenue &mdash; South</p>
-            <p>Dubai International Financial Centre</p>
-            <p>Dubai, United Arab Emirates</p>
-            <p className="mt-2"><strong className="text-white">Legal:</strong> <a href="mailto:legal@keyflowae.com">legal@keyflowae.com</a></p>
-            <p><strong className="text-white">Support:</strong> <a href="mailto:support@keyflowae.com">support@keyflowae.com</a></p>
-            <p><strong className="text-white">Data Protection Officer:</strong> <a href="mailto:dpo@keyflowae.com">dpo@keyflowae.com</a></p>
-          </div>
+          <h2>16. General</h2>
+          <p>
+            <strong>16.1 Entire agreement.</strong> These Terms, the DPA, the Privacy Policy (in respect of personal data as it describes) and any signed order form the entire agreement between the parties regarding the Services and supersede all prior versions, including Version 1.x published under the keyflow.me domain.
+          </p>
+          <p>
+            <strong>16.2 Order of precedence.</strong> A signed order prevails over these Terms; the DPA prevails over both in respect of personal data processing.
+          </p>
+          <p>
+            <strong>16.3 Assignment.</strong> Neither party may assign these Terms without the other&apos;s prior written consent, except that KeyFlow may assign them to a successor in a merger, acquisition or sale of substantially all its assets, with notice to the Agency.
+          </p>
+          <p>
+            <strong>16.4 Notices.</strong> Notices to the Agency go to its registered administrative email and are effective when sent; notices to KeyFlow go to <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a> or by post to the registered address in Section 1.1.
+          </p>
+          <p>
+            <strong>16.5 Force majeure.</strong> Neither party is liable for delay or failure caused by events beyond its reasonable control, provided it notifies the other and uses reasonable efforts to mitigate.
+          </p>
+          <p>
+            <strong>16.6 No waiver; severability.</strong> A failure to enforce a right is not a waiver. If a provision is held invalid, the remainder continues in effect, and the provision is modified to the minimum extent needed to make it valid.
+          </p>
+
+          <h2>17. Contact</h2>
+          <table>
+            <thead><tr><th>Purpose</th><th>Contact</th></tr></thead>
+            <tbody>
+              <tr><td>General and legal notices</td><td><a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a></td></tr>
+              <tr><td>Data protection (DPO)</td><td>Abdallah Alshaqra, Data Protection Officer — <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a></td></tr>
+              <tr><td>Post</td><td>KeyFlow Technology Ltd, Unit GA-00-SZ-01-FX-07, Level 1, Gate Avenue South Zone, DIFC, Dubai, UAE</td></tr>
+              <tr><td>Web</td><td><a href="/contact">keyflowae.com/contact</a></td></tr>
+            </tbody>
+          </table>
+          <p>
+            Data-subject rights and privacy questions are handled as described in the Privacy Policy at <a href="/privacy-policy">keyflowae.com/privacy-policy</a>, which also explains how to contact the DIFC Commissioner of Data Protection.
+          </p>
 
           <h2>Document Control</h2>
           <table>
             <thead><tr><th>Version</th><th>Date</th><th>Author</th><th>Changes</th></tr></thead>
             <tbody>
               <tr><td>1.0</td><td>22 February 2026</td><td>Abdallah Al Shaqra (CEO / Interim DPO)</td><td>Initial version covering all Keyflow products (LeaseFlow, LeadsFlow, Connect, keyflowae.com).</td></tr>
+              <tr><td>2.0</td><td>22 July 2026</td><td>Abdallah Alshaqra (Founder &amp; CEO / Interim DPO)</td><td>Full rewrite: unified versioning with the Privacy Policy (single v2.0 tracked by the consent gate); agency-as-customer model; UAE PASS identity; next-generation platform (Arc, Atlas, Connect, Ledger, Console, Keys); first-generation wind-down and DealsFlow discontinuation; Data Processing Addendum incorporated by reference at keyflowae.com/dpa; supersedes all v1.x terms published under the keyflow.me domain.</td></tr>
             </tbody>
           </table>
           <p><strong>Review Schedule:</strong> Annually at minimum, or when Services or regulatory requirements change materially.</p>
-          <p><strong>Next review date:</strong> 22 February 2027</p>
+          <p><strong>Next review date:</strong> 22 July 2027</p>
 
           <hr className="my-8 border-[#333]" />
           <p className="text-sm text-[#666] italic">
-            These Terms of Service are maintained in accordance with the laws of the Dubai International Financial Centre (DIFC). They should be read in conjunction with the Keyflow Data Protection Policy.
+            KeyFlow Technology Ltd — Terms of Service v2.0 — effective 22 July 2026. Supersedes all v1.x terms. The Data Processing Addendum at keyflowae.com/dpa forms an integral part of these Terms.
           </p>
           <p className="text-sm text-[#666] italic">
-            Document Reference: TOS-2026-001 | Keyflow Technology Ltd | DIFC License CL-12435
+            KeyFlow Technology Ltd | DIFC Commercial Licence CL-12435
           </p>
         </div>
 

@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Data Protection Policy — Keyflow Technology Ltd",
+  title: "Privacy Policy — KeyFlow Technology Ltd",
   description:
-    "Keyflow Technology Ltd data protection policy covering LeaseFlow, LeadsFlow, Connect, and all Keyflow services. DIFC Data Protection Law compliant.",
+    "KeyFlow Technology Ltd Privacy Policy covering the Keyflow platform (Arc, Atlas, Connect, Ledger, Console, Keys), LeaseFlow, LeadsFlow and keyflowae.com. DIFC Data Protection Law compliant. Version 2.0, effective 22 July 2026.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -21,11 +21,11 @@ export default function PrivacyPolicyPage() {
         </div>
 
         <h1 className="text-4xl font-bold text-white mb-2" style={{ fontFamily: "var(--font-outfit, Outfit, sans-serif)" }}>
-          Keyflow Technology Ltd &mdash; Data Protection Policy
+          KeyFlow Privacy Policy
         </h1>
         <p className="text-[#888] mb-2 text-sm">
-          <strong className="text-[#FAFAFA]">Effective:</strong> 22 February 2026 &nbsp;|&nbsp;{" "}
-          <strong className="text-[#FAFAFA]">Version:</strong> 1.2
+          <strong className="text-[#FAFAFA]">Effective:</strong> 22 July 2026 &nbsp;|&nbsp;{" "}
+          <strong className="text-[#FAFAFA]">Version:</strong> 2.0
         </p>
 
         <hr className="my-8 border-[#333]" />
@@ -41,457 +41,296 @@ export default function PrivacyPolicyPage() {
           [&_th]:text-left [&_th]:border [&_th]:border-[#444] [&_th]:bg-[#1A1A1A] [&_th]:px-3 [&_th]:py-2 [&_th]:font-semibold [&_th]:text-white
           [&_td]:border [&_td]:border-[#444] [&_td]:px-3 [&_td]:py-2 [&_td]:text-[#ccc]
           [&_a]:text-[#C9A87C] [&_a]:hover:underline
-          [&_strong]:text-white"
+          [&_strong]:text-white
+          [&_blockquote]:border-l-4 [&_blockquote]:border-[#C9A87C] [&_blockquote]:pl-4 [&_blockquote]:text-[#ccc]"
         >
           <p>
-            Keyflow Technology Ltd (&ldquo;Keyflow&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) values your security and privacy. Keyflow is a company registered in the Dubai International Financial Centre (DIFC License No. CL-12435, Reference SR-661431) and is required to comply with the DIFC Data Protection Law, DIFC Law No. 5 of 2020 (the &ldquo;DP Law&rdquo;), the DIFC Data Protection Regulations 2020, and may, for certain types of personal data processing, be subject to laws from other jurisdictions including UAE Federal Decree-Law No. 45 of 2021 (the &ldquo;Federal Data Protection Law&rdquo;) and the EU General Data Protection Regulation (GDPR) where applicable.
+            <strong>KeyFlow Technology Ltd</strong> (trading as &ldquo;KeyFlow&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;)<br />
+            DIFC Commercial Licence <strong>CL-12435</strong> &middot; Unit GA-00-SZ-01-FX-07, Level 1, Gate Avenue South Zone, DIFC, Dubai, UAE
           </p>
+          <table>
+            <tbody>
+              <tr><td><strong>Version</strong></td><td>2.0</td></tr>
+              <tr><td><strong>Effective date</strong></td><td>22 July 2026</td></tr>
+              <tr><td><strong>Supersedes</strong></td><td>Version 1.x (published under a superseded domain; no longer in effect)</td></tr>
+              <tr><td><strong>Canonical location</strong></td><td><a href="/privacy-policy">https://keyflowae.com/privacy-policy</a> (linked from all KeyFlow products)</td></tr>
+              <tr><td><strong>Data Protection Officer</strong></td><td>Abdallah Alshaqra (interim) — <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a></td></tr>
+            </tbody>
+          </table>
           <p>
-            It is the policy of Keyflow to respect the privacy of its users across all products and services. In accordance with the DP Law and, as applicable, our Terms of Service (TOS-2026-001), Keyflow collects information about you when you use or access our products and services, including:
+            KeyFlow Technology Ltd is a company incorporated in the Dubai International Financial Centre (&ldquo;DIFC&rdquo;). We are committed to processing Personal Data in accordance with the <strong>DIFC Data Protection Law, DIFC Law No. 5 of 2020 (as amended)</strong> (&ldquo;the DP Law&rdquo;) and the DIFC Data Protection Regulations. This Policy explains what Personal Data we collect, why we collect it, how we process, store, transfer and protect it, and the rights you have. Capitalised terms not defined here have the meanings given in the DP Law.
           </p>
+          <p>This Policy applies from its effective date to all of the following (&ldquo;<strong>the Services</strong>&rdquo;):</p>
           <ul>
-            <li><strong>LeaseFlow</strong> (leaseflow.me) &mdash; property and lease management platform</li>
-            <li><strong>LeadsFlow</strong> (leadsflow.me) &mdash; real estate lead management and CRM</li>
-            <li><strong>Connect</strong> (connect.keyflowae.com) &mdash; unified communications hub (WhatsApp Business and email)</li>
-            <li><strong>Keyflow Website</strong> (keyflowae.com) &mdash; our corporate website</li>
+            <li>the <strong>KeyFlow marketing website</strong> at keyflowae.com;</li>
+            <li>the <strong>next-generation Keyflow platform</strong> — the Arc, Atlas, Connect, Ledger, Console and Keys applications (web and iOS) used by real-estate agencies and their clients;</li>
+            <li>the <strong>first-generation products LeaseFlow</strong> (leaseflow.me) and <strong>LeadsFlow</strong> (leadsflow.me), which remain in operation for existing agency customers while they migrate to the next-generation platform.</li>
           </ul>
-          <p>(collectively, the &ldquo;Services&rdquo;), as well as through other interactions and communications you have with us.</p>
-          <p>
-            This data protection policy (the &ldquo;Policy&rdquo;) sets out the basis on which any information, including any personal data, we collect from you, or you provide to us, will be processed by Keyflow. Each time you access or use the Services or provide us with information, by doing so you acknowledge the practices described in this Policy. For use of specific services, you may be asked to provide your affirmative opt-in consent to our use of the information you submit. Your rights described herein apply in these instances as well.
-          </p>
+          <p>The first-generation product DealsFlow was discontinued on 15 July 2026 and held no Personal Data at discontinuation.</p>
 
           <h2>1. Scope and Application</h2>
-          <p>This Policy applies to persons anywhere in the world who access or use any of Keyflow&apos;s Services (&ldquo;Users&rdquo;), including but not limited to:</p>
+
+          <h3>1.1 Who this Policy is for</h3>
+          <p>
+            This Policy applies to everyone whose Personal Data we process through the Services, wherever in the world you are located: visitors to our website; staff of the real-estate agencies that use our platform (brokers, administrators, finance staff); the agencies&apos; clients — <strong>tenants, landlords and property owners, buyers, sellers and prospective clients</strong> — including users of the <strong>Keys</strong> app; signatories to documents executed through the platform; and our business and supplier contacts.
+          </p>
+
+          <h3>1.2 The two roles KeyFlow plays — and why it matters to you</h3>
+          <p>KeyFlow processes Personal Data in two distinct capacities, and your rights are exercised through a different door depending on which applies:</p>
           <ul>
-            <li>Real estate agency administrators, managers, and agents who use the Services</li>
-            <li>Property owners who access owner portals</li>
-            <li>Tenants and clients whose personal data is managed through the Services</li>
-            <li>Leads and prospective clients whose inquiry data is processed through the Services</li>
-            <li>Contacts who communicate via WhatsApp Business or email through Connect</li>
-            <li>Visitors to the Keyflow website</li>
+            <li><strong>KeyFlow as Controller.</strong> We decide the purposes and means of processing for: your platform account and verified identity, security and audit logging, session management, push-notification delivery, the handling of data-protection rights requests, our website, and our own corporate and supplier records. For this data, <strong>this Policy is your notice and KeyFlow is your point of contact.</strong></li>
+            <li><strong>KeyFlow as Processor.</strong> The real-estate agency you deal with is the Controller of its own client records — its CRM entries, tenancy and sale records, messages, documents and financial records held in the platform. We process that data <strong>only on the agency&apos;s documented instructions</strong> under a written data processing agreement that complies with Article 24 of the DP Law. For this data, <strong>the agency is responsible for the lawfulness of the processing and for answering your rights requests, and we assist it in doing so.</strong> If you contact us about agency-held data, we will route your request to the agency without undue delay and support its response (see Section 6.5).</li>
           </ul>
+
+          <h3>1.3 If you use the Keys app (tenants, owners, buyers) — in plain language</h3>
+          <p>Keys is the client app of the Keyflow platform. If your agency invites you to use it:</p>
+          <ul>
+            <li>You sign in with <strong>UAE PASS</strong>, the UAE&apos;s national digital identity. You authenticate directly with UAE PASS, at your own initiation; we never see or hold a password for you. UAE PASS shares verified identity attributes with us (see Section 2.1).</li>
+            <li>You can view your documents, receive offer letters, and <strong>sign contracts electronically through UAE PASS</strong> — again at your own request, for each individual document.</li>
+            <li>If you set up <strong>rent auto-debit</strong>, the mandate is operated with our regulated payment partner. <strong>Your bank credentials never touch KeyFlow&apos;s systems</strong>; we hold only the mandate details (limits, validity window, authorisation and revocation records).</li>
+            <li>Your tenancy, purchase and payment records in Keys belong to your agency&apos;s relationship with you: the <strong>agency is the Controller</strong> of those records and KeyFlow processes them on the agency&apos;s behalf. Your KeyFlow account itself (your verified identity, sessions, notification settings) is controlled by KeyFlow.</li>
+            <li>Linking your Keys account to an agency&apos;s records happens under two-party control: you initiate the link with your UAE PASS-verified identity, and the agency explicitly approves it. No agency can see another agency&apos;s data about you.</li>
+          </ul>
+
+          <h3>1.4 Children</h3>
+          <p>
+            The Services are directed at adults engaged in real-estate business and transactions. We do not knowingly collect Personal Data from children, and no part of the Services is designed for or targeted at them.
+          </p>
 
           <h2>2. Collection of Information</h2>
 
-          <h3>2.1 Information You Give Us</h3>
-          <p>This is personal data you give us by providing information or filling in forms on our Services, or by corresponding with us (for example, by telephone, email, WhatsApp, or any other digital or electronic form). It includes information you provide when you register for an account, create or manage lease contracts, submit lead inquiries, communicate through Connect, or report a problem with any of our Services.</p>
-          <p>The personal data you give us may include the following categories:</p>
-          <p><strong>Identity and Contact Data:</strong></p>
+          <h3>2.1 Information you give us, or that is verified at the source</h3>
+          <p>Wherever possible we obtain identity data from <strong>official sources rather than asking you to type it in or upload scans</strong>:</p>
           <ul>
-            <li>Full name, email address, phone number, postal address</li>
-            <li>Emirates ID number and Emirates ID document images</li>
-            <li>Nationality, date of birth</li>
-            <li>Passport number and passport document images (where provided)</li>
-            <li>Photographs and profile pictures</li>
-          </ul>
-          <p><strong>Property and Lease Data:</strong></p>
-          <ul>
-            <li>Property details, unit information, lease terms and conditions</li>
-            <li>Rental amounts, payment schedules, deposit information</li>
-            <li>Ejari contract details, RERA compliance data, DLD permit numbers</li>
-            <li>Lease documents, contracts, and associated correspondence</li>
-          </ul>
-          <p><strong>Financial Data:</strong></p>
-          <ul>
-            <li>Bank account details (property owners &mdash; for rental disbursements)</li>
-            <li>Commission records, management fee calculations</li>
-            <li>Cheque details and payment records</li>
-          </ul>
-          <p><strong>Lead and Inquiry Data:</strong></p>
-          <ul>
-            <li>Name, email, phone number</li>
-            <li>Property interests, budget, timeline preferences</li>
-            <li>Source of inquiry (property portal, social media, website, referral)</li>
-            <li>Notes and follow-up records</li>
-          </ul>
-          <p><strong>Communication Data (Connect):</strong></p>
-          <ul>
-            <li>WhatsApp messages (sent and received), message delivery status</li>
-            <li>Email content, subject lines, attachments</li>
-            <li>Contact information, conversation history</li>
-          </ul>
-          <p><strong>Photographs and Profile Pictures:</strong></p>
-          <ul>
-            <li>Emirates ID photographs are processed through AWS Rekognition (DetectFaces API) to extract the facial region for use as client profile pictures within LeaseFlow</li>
-            <li>This is face detection for photo cropping only &mdash; it is NOT biometric identification, face comparison, or identity verification</li>
-            <li>No biometric vectors, embeddings, or comparison data are generated or stored</li>
-          </ul>
-          <p><strong>Staff and Agent Data:</strong></p>
-          <ul>
-            <li>Employee names, email addresses, phone numbers</li>
-            <li>Roles and permissions, login credentials (passwords stored in hashed form only)</li>
-            <li>Performance metrics, activity logs</li>
+            <li><strong>UAE PASS identity attributes</strong> (when you authenticate or sign): full name (English and Arabic), Emirates ID number, email address, mobile number, nationality, gender, identity-assurance level and UAE PASS identifier.</li>
+            <li><strong>Account and profile information</strong> you or your organisation provide: role, agency membership, RERA agent identifiers for brokers, notification preferences.</li>
+            <li><strong>Enquiries and correspondence</strong>: information you provide when you contact us, submit a form on our website, or communicate through the platform.</li>
+            <li><strong>Transaction information</strong> entered in the course of using the Services: tenancy and sale terms, invoices, payment and post-dated cheque records, auto-debit mandate details, maintenance requests, and documents generated or uploaded in the Services.</li>
           </ul>
 
-          <h3>2.2 Information We Collect About You and Your Device</h3>
-          <p>Each time you use our Services we may automatically collect the following information:</p>
-          <ul>
-            <li><strong>Technical Information:</strong> the type of device you use, a unique device identifier, your operating system, browser type and version, time zone setting, language preferences (&ldquo;Device Information&rdquo;)</li>
-            <li><strong>Log Information:</strong> details of your use of our Services including, but not limited to, traffic data, access logs, API call records, and the resources that you access (&ldquo;Log Information&rdquo;)</li>
-            <li><strong>Location Information:</strong> IP address and general geographic location derived from IP address</li>
-          </ul>
+          <h3>2.2 Information collected about you by your agency</h3>
+          <p>
+            Where you are a client or prospective client of a real-estate agency using our platform, the agency may record information about you in the Services (contact details, enquiry details, tenancy or transaction records). The agency is the Controller of that data (Section 1.2) and is responsible for informing you under Articles 29–30 of the DP Law; where required, notice is also given at our first communication with you through the platform.
+          </p>
 
-          <h3>2.3 Information We Receive from Third Parties</h3>
-          <p>We receive personal data from third-party services that integrate with our platform:</p>
+          <h3>2.3 Information we collect about you and your device</h3>
           <ul>
-            <li><strong>Property portals</strong> (Bayut, PropertyFinder, Dubizzle): lead inquiry data including name, phone, email, and property interest</li>
-            <li><strong>Meta Lead Ads</strong> (Facebook/Instagram): lead inquiry data from social media advertising campaigns</li>
-            <li><strong>Webhook integrations</strong> (Zapier, custom webhooks): lead data from external systems configured by your agency</li>
+            <li><strong>Device information</strong>: for the iOS apps, a push-notification device token and basic device characteristics needed to deliver notifications.</li>
+            <li><strong>Log and session information</strong>: IP address, browser user agent, session identifiers (stored hashed), sign-in and sign-out events, and timestamps.</li>
+            <li><strong>Audit records</strong>: the platform keeps an append-only audit log of every data change — who did what, when, and from where — as a security and accountability measure.</li>
+            <li><strong>Website data</strong>: the marketing website is a static site; analytics data is collected <strong>only if you opt in</strong> (see Section 8).</li>
           </ul>
+          <p>We do not collect GPS or continuous location data through any of the Services.</p>
 
-          <h2>3. Special Categories of Personal Data</h2>
-          <p>Keyflow does <strong>not</strong> process special categories of personal data as defined in Article 9 of the DP Law.</p>
-          <p><strong>Clarification on Face Detection:</strong> We use AWS Rekognition (DetectFaces API) within LeaseFlow to detect and crop the facial region from Emirates ID photographs for use as client profile pictures. This is standard image processing for photo extraction &mdash; it does NOT constitute biometric data processing under Article 9 because:</p>
-          <ul>
-            <li>It is not used for the purpose of uniquely identifying a natural person</li>
-            <li>No face comparison (CompareFaces) or identity verification is performed</li>
-            <li>No biometric vectors, embeddings, or face collections are created or stored</li>
-            <li>Only the detected face bounding box coordinates are used to crop a profile photo</li>
-          </ul>
-          <p>We do not process data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, data concerning health, or data concerning a person&apos;s sex life or sexual orientation.</p>
-          <p><strong>Children&apos;s Data:</strong> Our Services are not targeted at, intended for, or expected to be of use to children under the age of 18. We do not knowingly collect personal data from children.</p>
+          <h3>2.4 Special Categories of Personal Data</h3>
+          <p>
+            We do not intentionally process Special Categories of Personal Data (such as data revealing racial or ethnic origin, beliefs, health or biometric identification data). UAE PASS performs any biometric verification inside its own service; we receive identity attributes only, not biometric data.
+          </p>
 
-          <h3>3A. B2B2C Data Processing Model</h3>
-          <p>Keyflow operates a business-to-business-to-consumer (B2B2C) model:</p>
+          <h2>3. Use of Personal Data</h2>
+          <p>We use Personal Data, in each case with a documented lawful basis under Article 10 of the DP Law, to:</p>
           <ul>
-            <li><strong>Our direct customers</strong> are real estate agencies who subscribe to our Services.</li>
-            <li><strong>Indirect data subjects</strong> include tenants, property owners, and leads whose personal data is input into the platform by the subscribing agency.</li>
-            <li><strong>Lawful basis for agency-entered data:</strong> When an agency inputs tenant or property owner data, the lawful basis is primarily contract performance (Article 10(1)(b)) &mdash; the processing is necessary for the tenancy or property management agreement between the agency and the individual. Agencies may also rely on legitimate interest (Article 10(1)(f)) for lead management and operational purposes.</li>
-            <li><strong>Agency responsibility:</strong> Each subscribing agency is responsible for ensuring it has the appropriate lawful basis for collecting personal data from its clients (e.g., under the tenancy agreement or management contract). Keyflow provides the platform infrastructure and processing capabilities.</li>
+            <li><strong>provide, maintain and improve the Services</strong> — operating accounts, agency workspaces, property and tenancy management, messaging, documents, e-signing, invoicing and payments (contract; consent for actions you initiate such as UAE PASS authentication, signing and auto-debit mandates);</li>
+            <li><strong>verify identity at the source</strong> — anchoring accounts on UAE PASS attributes and matching brokers against Dubai Land Department agent records (consent and contract);</li>
+            <li><strong>deliver operational notifications</strong> — service messages, signing requests, payment and tenancy notices (contract). Operational messages are not marketing and continue while you use the Services;</li>
+            <li><strong>send marketing communications only with your prior opt-in consent</strong>, which is never pre-ticked and is as easy to withdraw as to give (consent — see Section 6.1);</li>
+            <li><strong>maintain security, prevent fraud and keep evidence</strong> — access control, session management, tenant isolation, audit logging of every data change, incident investigation (legitimate interests, which the DP Law recognises for network and information security, and legal obligation);</li>
+            <li><strong>comply with legal and regulatory obligations</strong> — statutory record-keeping, tax and audit retention, responding to valid requests from public authorities (legal obligation — see Section 5.4);</li>
+            <li><strong>administer data-protection rights requests</strong> and keep the records the DP Law requires of us (legal obligation);</li>
+            <li><strong>notify you of changes</strong> to the Services, this Policy or our terms.</li>
           </ul>
+          <p>Where KeyFlow acts as Processor, we use agency-controlled data only as instructed by the agency and never for our own purposes.</p>
 
-          <h2>4. Use of Personal Data</h2>
-          <p>We use personal data which you provide to us or we collect from you for the following purposes:</p>
-          <h3>4.1 Service Delivery and Contract Performance (Article 10(1)(b) of the DP Law)</h3>
-          <ul>
-            <li>Provide, maintain, and improve our Services, including facilitating property management, lease administration, lead management, and communications</li>
-            <li>Process and manage lease contracts, rental payments, Ejari registrations, and PropertyFinder listings</li>
-            <li>Distribute leads to agents, manage lead lifecycle, and track conversions</li>
-            <li>Facilitate WhatsApp Business and email communications through Connect</li>
-            <li>Authenticate users, manage accounts and permissions, and provide customer support</li>
-            <li>Send transactional communications (e.g., lease reminders, payment confirmations, service notifications)</li>
-          </ul>
-          <h3>4.2 Legal Obligations (Article 10(1)(c) of the DP Law)</h3>
-          <ul>
-            <li>Comply with RERA regulations, Ejari registration requirements, and Dubai Land Department requirements</li>
-            <li>Maintain audit logs for a minimum of 7 years as required by DIFC regulations</li>
-            <li>Respond to lawful requests from regulatory authorities</li>
-            <li>Maintain records of processing activities as required by Article 15 of the DP Law</li>
-          </ul>
-          <h3>4.3 Legitimate Interests (Article 10(1)(f) of the DP Law)</h3>
-          <ul>
-            <li>Perform internal administrative and operational functions</li>
-            <li>Prevent fraud, abuse, and unauthorized access to our Services</li>
-            <li>Conduct data analysis, testing, and research to improve our Services</li>
-            <li>Troubleshoot software issues and operational problems</li>
-            <li>Monitor usage and activity trends for service improvement</li>
-            <li>Ensure network and information security</li>
-          </ul>
-          <h3>4.4 Consent (Article 10(1)(a) of the DP Law)</h3>
-          <p>The following processing activities are conducted only with your explicit consent, which you may withdraw at any time:</p>
-          <ul>
-            <li>Marketing and promotional email communications</li>
-            <li>Marketing SMS communications</li>
-            <li>Marketing phone communications</li>
-            <li>Analytics cookies and tracking technologies</li>
-            <li>Sharing data with third parties for marketing purposes</li>
-            <li>Automated profiling and lead scoring</li>
-          </ul>
-          <h3>4.5 AI-Powered Processing</h3>
-          <p>Keyflow uses artificial intelligence services provided by AWS to enhance the Services:</p>
-          <ul>
-            <li><strong>AWS Bedrock (Claude Haiku):</strong> Intelligent document analysis for lease contracts and property documents. Documents are sent to the AI service for analysis and the results are returned to the application. AWS does not retain your data for model training.</li>
-            <li><strong>AWS Textract:</strong> Optical character recognition (OCR) for extracting information from Emirates ID cards, lease contracts, and other documents.</li>
-            <li><strong>AWS Rekognition:</strong> Face detection (DetectFaces API only) for extracting profile photos from Emirates ID images. No face comparison, identity verification, or biometric identification is performed.</li>
-          </ul>
-          <p>None of these AI services make automated decisions with legal effects on data subjects. AI assists real estate agents in their work &mdash; all significant decisions are made by human operators.</p>
+          <h2>4. Processing, Storage and Transfer of Personal Data</h2>
 
-          <h2>5. Processing, Storage, and Transfer of Personal Data</h2>
-          <h3>5.1 Data Storage Location</h3>
-          <p>Your personal data is primarily stored in the AWS Middle East (UAE) region (me-central-1), which is the local AWS region in the UAE. This includes our databases (AWS RDS PostgreSQL), file storage (AWS S3), and application hosting (AWS ECS Fargate).</p>
-          <h3>5.2 International Transfers</h3>
-          <p>In order to conduct our operations, we transfer personal data to processors outside the DIFC:</p>
+          <h3>4.1 Fair and lawful processing</h3>
+          <p>
+            All processing is conducted fairly, lawfully and transparently in accordance with the DP Law. Each processing activity, its purpose and its lawful basis are documented in our Record of Processing Activities, which is maintained under Article 15 of the DP Law and available to the Commissioner of Data Protection.
+          </p>
+
+          <h3>4.2 Automated decision-making</h3>
+          <p>
+            <strong>We do not make any decision based solely on automated processing that produces legal effects concerning you or otherwise significantly affects you.</strong> The platform&apos;s automations — such as lead-assignment and reminder rules — are deterministic, human-defined rules, and no such automation produces legal or similarly significant effects without human involvement. AI-assisted features are not currently active on the platform; <strong>if and when they are activated, they will be introduced only with the controls required by Regulation 10 of the DIFC Data Protection Regulations</strong> (including impact assessment, user notices at first use and human review), and this Policy will be updated before their introduction.
+          </p>
+
+          <h3>4.3 Where your data is processed and stored</h3>
+          <ul>
+            <li><strong>Primary hosting: AWS Singapore (ap-southeast-1).</strong> Singapore is recognised as an <strong>adequate jurisdiction</strong> under Article 26 of the DP Law and Appendix 3 of the DIFC Data Protection Regulations, so this storage requires no additional transfer safeguard. Databases are encrypted at rest in private, isolated networks; documents are stored encrypted with public access blocked.</li>
+            <li><strong>Onshore UAE (outside the DIFC)</strong>: certain flows go to UAE government services <strong>at your own initiation</strong> — UAE PASS authentication and digital signing (with your explicit consent and as necessary for the transaction you request, under Article 27(3) of the DP Law), and Dubai Land Department verifications (conducted under the government data-sharing procedure in Section 5.4). Documents transmitted for signing are limited to the signing transaction.</li>
+            <li><strong>Limited transfers to the USA</strong>: delivery of push notifications through Apple&apos;s notification service, minimised to the device token and the notification content. Meta/WhatsApp messaging is <strong>not currently active</strong>; if activated, it will operate only once safeguards compliant with Article 27 of the DP Law are in place.</li>
+            <li><strong>Legacy first-generation file storage</strong> for LeaseFlow and LeadsFlow partially remains in AWS UAE (me-central-1) under KeyFlow&apos;s sole control; that storage is being consolidated to Singapore, to be completed before the next-generation platform&apos;s production launch.</li>
+          </ul>
+          <p>
+            Every transfer jurisdiction is declared in our notification to the Commissioner of Data Protection. Any other transfer to a non-adequate jurisdiction would take place only under DIFC-approved safeguards (such as the DIFC Standard Contractual Clauses) or a specific derogation permitted by Article 27.
+          </p>
+
+          <h3>4.4 How long we keep Personal Data</h3>
+          <p>We keep Personal Data in identifiable form no longer than necessary, under a documented Retention &amp; Erasure Schedule. The key periods:</p>
           <table>
-            <thead><tr><th>Processor</th><th>Location</th><th>Purpose</th><th>Safeguards</th></tr></thead>
+            <thead><tr><th>Data</th><th>Retention</th></tr></thead>
             <tbody>
-              <tr><td>Amazon Web Services (AWS)</td><td>UAE (me-central-1) primary; certain services may route through US/global endpoints</td><td>Infrastructure, database, storage, email, AI processing, OCR, face detection</td><td>AWS Data Processing Addendum with Standard Contractual Clauses</td></tr>
-              <tr><td>Meta Platforms (WhatsApp Business API)</td><td>US/EU</td><td>WhatsApp messaging (Connect only)</td><td>Meta Data Processing Terms with Standard Contractual Clauses</td></tr>
+              <tr><td>Account and identity records</td><td>Life of the account; erased (by anonymisation) on account closure or an executed erasure request</td></tr>
+              <tr><td>Sessions and session metadata (IP, user agent)</td><td>Hard-deleted 30 days after session expiry</td></tr>
+              <tr><td>Audit log</td><td>7 years (deleted automatically thereafter)</td></tr>
+              <tr><td>Signed contracts and signing events</td><td>15 years from execution (regulated-document horizon)</td></tr>
+              <tr><td>Financial records (invoices, payments, cheques)</td><td>Minimum 5 years (UAE VAT), within a 15-year envelope for property-transaction documents</td></tr>
+              <tr><td>Leads and unconverted contacts (agency-controlled)</td><td>Default: 2 years after last activity, subject to the agency&apos;s instructions</td></tr>
+              <tr><td>Messages (agency-controlled)</td><td>Life of the agency–client relationship + 2 years, subject to the agency&apos;s instructions</td></tr>
+              <tr><td>Rights-request records</td><td>7 years, as compliance evidence</td></tr>
             </tbody>
           </table>
-          <p>Neither the United States nor the UAE (outside DIFC) currently holds a DIFC adequacy designation. Accordingly, we rely on Standard Contractual Clauses (SCCs) incorporated into our Data Processing Agreements with each processor, as permitted under Article 27(1) of the DP Law.</p>
-          <p>We take appropriate security measures to protect your personal data in connection with all international transfers, in accordance with the DP Law and this Policy.</p>
-          <h3>5.3 Automated Decision-Making</h3>
-          <p>Keyflow does not rely solely on automated decision-making when processing your personal data. While we use AI tools to assist with document analysis, OCR, and profile photo extraction, all consequential decisions are made or reviewed by human operators.</p>
+          <p>
+            When a retention period ends, or the lawful basis for processing lapses, data is securely deleted, anonymised or — where neither is possible (for example, backup snapshots pending expiry) — archived beyond use in accordance with Article 22 of the DP Law. Our standard erasure method is irreversible anonymisation, which removes your identity while preserving the integrity of financial and legal records that the law requires us to keep.
+          </p>
 
-          <h2>6. Sharing of Personal Data</h2>
-          <h3>6.1 Within the Keyflow Platform</h3>
-          <p>Your personal data may be shared across Keyflow products (LeaseFlow, LeadsFlow, Connect) to provide integrated services. For example, a contact&apos;s information may be linked across LeadsFlow and Connect to enable unified communications. This sharing is governed by your agency&apos;s configuration and is necessary for the performance of the services you have requested.</p>
-          <h3>6.2 With Data Processors</h3>
-          <p>We share personal data with the following categories of processors who assist us in delivering the Services:</p>
-          <ul>
-            <li><strong>Cloud infrastructure providers</strong> (AWS) for hosting, storage, email delivery, AI processing, OCR, and profile photo extraction</li>
-            <li><strong>Communication platform providers</strong> (Meta/WhatsApp) for messaging services through Connect</li>
-          </ul>
-          <p>All processors are bound by Data Processing Agreements that require them to process data only on our instructions, maintain appropriate security measures, and comply with applicable data protection laws.</p>
-          <h3>6.3 With Third Parties as Directed by Your Agency</h3>
-          <p>Real estate agencies using our Services may configure integrations that share data with:</p>
-          <ul>
-            <li>Property portals (PropertyFinder) for listing syndication &mdash; note: this involves property metadata and listing information only, NOT tenant personal data</li>
-            <li>Workflow automation tools (Zapier) as configured by the agency</li>
-          </ul>
-          <h3>6.4 Legal and Regulatory Disclosure</h3>
-          <p>We may share personal data:</p>
-          <ul>
-            <li>In response to a request for information by a competent authority or government entity if we determine that such disclosure is required by applicable law, regulation, or legal process</li>
-            <li>With law enforcement officials, government entities, or authorities as required by applicable law</li>
-            <li>To comply with RERA, Ejari, DLD, or other Dubai/UAE real estate regulatory requirements</li>
-            <li>In connection with any merger, sale of company assets, consolidation, or restructuring</li>
-            <li>In an aggregated and/or anonymized form that cannot reasonably be used to identify you</li>
-          </ul>
-          <h3>6.5 Government Data Sharing</h3>
-          <p>In some circumstances we may be legally obliged to share information with public authorities or law enforcement. In any such scenario, we will satisfy ourselves that we have a lawful basis on which to share the information and document our decision-making process.</p>
+          <h3>4.5 Accuracy</h3>
+          <p>
+            Identity attributes anchored on UAE PASS and Dubai Land Department records are verified at the source. You may ask us — or, for agency-held records, your agency — to correct inaccurate or incomplete data at any time (Section 6.3), and corrections are passed on to recipients of the data where required.
+          </p>
 
-          <h2>7. Data Retention</h2>
-          <p>We retain personal data for the following periods:</p>
+          <h2>5. Sharing of Personal Data</h2>
+
+          <h3>5.1 Through the Services</h3>
+          <p>
+            Data you or your agency enter into the platform is visible to authorised users within that agency&apos;s workspace under its own access rules. <strong>Strict tenant isolation applies: no agency can see another agency&apos;s data.</strong> The only cross-boundary mechanism is client account linking in Keys, which requires both your UAE PASS-verified initiation and the agency&apos;s explicit approval.
+          </p>
+
+          <h3>5.2 Service providers (processors)</h3>
+          <p>We disclose Personal Data to service providers who process it on our documented instructions under written agreements meeting Article 24 of the DP Law:</p>
           <table>
-            <thead><tr><th>Data Category</th><th>Retention Period</th><th>Basis</th></tr></thead>
+            <thead><tr><th>Provider</th><th>Purpose</th><th>Location</th></tr></thead>
             <tbody>
-              <tr><td>Audit logs</td><td>7 years minimum from creation</td><td>DIFC regulatory requirement</td></tr>
-              <tr><td>Consent records</td><td>7 years from consent date</td><td>DIFC accountability requirement (Article 14)</td></tr>
-              <tr><td>Lease and property data</td><td>Duration of agency subscription + 7 years</td><td>Legal obligation (RERA, Ejari) and audit retention</td></tr>
-              <tr><td>Lead data</td><td>Duration of agency subscription + 30 days</td><td>Contractual necessity</td></tr>
-              <tr><td>Communication data (messages)</td><td>Duration of agency subscription + 7 years</td><td>Audit trail requirement</td></tr>
-              <tr><td>User accounts</td><td>Duration of subscription + 30 days grace period</td><td>Contractual necessity</td></tr>
-              <tr><td>Profile photos (extracted from Emirates ID)</td><td>Duration of agency subscription + 7 years</td><td>Retained with client record</td></tr>
-              <tr><td>Identity document images</td><td>Duration of agency subscription + 7 years</td><td>Legal obligation (tenant verification records)</td></tr>
+              <tr><td>Amazon Web Services</td><td>Infrastructure — compute, database, document storage, email delivery</td><td>Singapore (ap-southeast-1); legacy first-generation file storage in AWS UAE pending consolidation</td></tr>
+              <tr><td>Atlassian</td><td>Operational and support tooling</td><td>Cloud</td></tr>
+              <tr><td>Microsoft 365</td><td>Corporate email</td><td>Cloud</td></tr>
+              <tr><td>Apple</td><td>Push-notification delivery</td><td>USA (device tokens and notification content only)</td></tr>
+              <tr><td>Lean Technologies</td><td>Payment initiation and account information services (currently sandbox/testing only)</td><td>UAE/ADGM</td></tr>
+              <tr><td>Meta Platforms</td><td>Lead Ads retrieval (where an agency connects its own account); WhatsApp messaging <strong>only when activated</strong>, with Article 27 safeguards in place first</td><td>USA</td></tr>
             </tbody>
           </table>
-          <p>After the applicable retention period, personal data is either securely deleted or anonymized so that no individual can be identified from the remaining data.</p>
-          <p>We are not responsible for the accuracy of the information you provide, and will modify or update your personal data in our databases when you provide updated information or upon your request, as further outlined below.</p>
 
-          <h2>8. Your Rights and Choices</h2>
-          <h3>8.1 Your Data Protection Rights</h3>
-          <p>Under the DP Law, you have the following rights in respect of your personal data:</p>
-          <table>
-            <thead><tr><th>Right</th><th>Description</th><th>DP Law Reference</th></tr></thead>
-            <tbody>
-              <tr><td><strong>Right of Access</strong></td><td>The right to obtain confirmation of whether we process your personal data and to receive a copy of that data</td><td>Article 32</td></tr>
-              <tr><td><strong>Right to Rectification</strong></td><td>The right to have inaccurate personal data corrected or incomplete data completed</td><td>Article 33</td></tr>
-              <tr><td><strong>Right to Erasure</strong></td><td>The right to have your personal data deleted in certain circumstances</td><td>Article 34</td></tr>
-              <tr><td><strong>Right to Restriction</strong></td><td>The right to restrict processing of your personal data in certain circumstances</td><td>Article 35</td></tr>
-              <tr><td><strong>Right to Data Portability</strong></td><td>The right to receive your personal data in a structured, commonly used, machine-readable format</td><td>Article 36</td></tr>
-              <tr><td><strong>Right to Object</strong></td><td>The right to object to processing based on legitimate interests or for direct marketing</td><td>Article 37</td></tr>
-              <tr><td><strong>Right to Withdraw Consent</strong></td><td>Where processing is based on consent, the right to withdraw that consent at any time</td><td>Article 10</td></tr>
-            </tbody>
-          </table>
-          <h3>8.2 How to Exercise Your Rights</h3>
-          <p><strong>Method 1 &mdash; Self-Service (where available):</strong></p>
-          <ul>
-            <li>Navigate to your account settings page (e.g., <code>/dashboard/settings/privacy</code> in LeaseFlow or LeadsFlow)</li>
-            <li>Use the data export request or account deletion request functions</li>
-            <li>Adjust your marketing and communication preferences</li>
-          </ul>
-          <p><strong>Method 2 &mdash; Contact Us Directly:</strong></p>
-          <ul>
-            <li><strong>Email:</strong> <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a></li>
-            <li><strong>Post:</strong> Data Protection Officer, Keyflow Technology Ltd, Unit GA-00-SZ-01-FX-07, Level 1, Gate Avenue - South, DIFC, Dubai, UAE</li>
-            <li><strong>Phone:</strong> +971 56 754 0655</li>
-          </ul>
-          <p>Any access request is generally free of charge. We will respond within 30 days of receiving your request, unless the DP Law provides otherwise. We may, where permissible, impose a reasonable fee to meet any extraordinary administrative costs.</p>
-          <h3>8.3 Marketing and Preferences</h3>
-          <p>You have the right to opt out of receiving marketing communications from us at any time. You may:</p>
-          <ul>
-            <li>Change your marketing preferences in your account settings</li>
-            <li>Use the unsubscribe link provided in marketing emails</li>
-            <li>Contact us at <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a> to opt out</li>
-          </ul>
-          <p>Please note that we may continue to send you transactional and service-related communications (e.g., lease reminders, payment confirmations, account notifications) even if you opt out of marketing communications, as these are necessary for the performance of the services you have requested.</p>
-          <h3>8.4 Non-Discrimination</h3>
-          <p>As set out in Article 39 of the DP Law, we will not discriminate against you for exercising your rights by denying services or changing prices or quality of service.</p>
+          <h3>5.3 Independent government services</h3>
+          <p>
+            <strong>UAE PASS / Digital Dubai and the Dubai Land Department are not our service providers.</strong> They are independent controllers of their own government services. You interact with UAE PASS directly when you authenticate or sign, under UAE PASS&apos;s own terms and privacy notice; we interface with the Dubai Land Department as a public authority under the procedure below.
+          </p>
 
-          <h2>9. Security Precautions</h2>
-          <p>Keyflow implements appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
-          <p><strong>Technical Measures:</strong></p>
-          <ul>
-            <li>Encryption at rest for all databases (AWS RDS with KMS encryption) and file storage (AWS S3 server-side encryption)</li>
-            <li>Encryption in transit via TLS/HTTPS for all data transmission</li>
-            <li>AWS Web Application Firewall (WAF) for protection against web-based attacks</li>
-            <li>Multi-tenant architecture with strict data isolation &mdash; each agency&apos;s data is segregated at the database query level</li>
-            <li>Role-based access controls limiting data access to authorized personnel only</li>
-            <li>Password hashing using bcrypt (passwords are never stored in plain text)</li>
-            <li>Automated security scanning (CodeQL) in our development pipeline</li>
-          </ul>
-          <p><strong>Organizational Measures:</strong></p>
-          <ul>
-            <li>Access to personal data is restricted to those who need it to perform their duties</li>
-            <li>Background checks on employees</li>
-            <li>Data protection training for all team members</li>
-            <li>Regular review and assessment of security policies and procedures</li>
-            <li>Audit logging of all access to and modification of personal data, with 7-year retention</li>
-            <li>Incident response procedures for handling data breaches</li>
-          </ul>
-          <p><strong>Sub-Processor Security:</strong></p>
-          <ul>
-            <li>AWS maintains SOC 1/2/3, ISO 27001, ISO 27017, ISO 27018, and PCI DSS certifications</li>
-            <li>Meta maintains ISO 27001 certification and SOC 2 reports</li>
-          </ul>
-          <p>If you have any questions about our security practices, please contact us at <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a>. To the extent permitted by applicable law, Keyflow expressly disclaims any liability that may arise should any third party obtain personal data through fraud or other means that are no fault of Keyflow.</p>
+          <h3>5.4 Government data sharing and lawful disclosures</h3>
+          <p>
+            Where a public authority requests disclosure of Personal Data, we follow a mandatory procedure aligned with Article 28 of the DP Law: every request is verified for identity and legal basis, assessed for proportionality, narrowed to the minimum data necessary, disclosed only with written confidentiality assurances where practicable, recorded, and — where the data is agency-controlled — notified to the agency unless the law prohibits it. Where the validity of a request is in doubt, we may consult the Commissioner of Data Protection before responding.
+          </p>
 
-          <h2>10. Cookies and Tracking Technologies</h2>
-          <p>A cookie is a small text file stored on your device by your web browser, used to retain user preferences and enhance your browsing experience.</p>
-          <h3>10.1 Cookies We Use</h3>
-          <p><strong>Essential Cookies:</strong></p>
-          <ul>
-            <li>Session cookies for authentication and maintaining your logged-in state</li>
-            <li>CSRF (Cross-Site Request Forgery) protection tokens</li>
-            <li>Load balancing and routing cookies</li>
-          </ul>
-          <p><strong>Analytics Cookies (with consent):</strong></p>
-          <ul>
-            <li>Usage analytics to understand how our Services are used and to improve them</li>
-          </ul>
-          <p><strong>Communication Cookies:</strong></p>
-          <ul>
-            <li>WhatsApp Business session management (Connect only)</li>
-          </ul>
-          <h3>10.2 Cookie Preferences</h3>
-          <p>In accordance with the DP Law, our default privacy settings collect only the minimum necessary cookies to operate the Services. Non-essential cookies require your opt-in consent.</p>
-          <p>You can manage your cookie preferences through your browser settings. Please refer to your browser&apos;s help documentation for instructions on how to modify cookie settings. You may also visit <a href="https://www.aboutcookies.org" target="_blank" rel="noopener noreferrer">www.aboutcookies.org</a> for general information about cookies and how to manage them.</p>
-          <p>Altering cookie settings may limit your ability to use certain features of the Services.</p>
+          <h3>5.5 Other disclosures</h3>
+          <p>
+            We may disclose Personal Data where required by Applicable Law (including fraud prevention), or in connection with a corporate transaction such as a merger or acquisition — in which case confidentiality protections apply and you will be notified where the law requires. We do not sell Personal Data, and we have no corporate group with which data is shared.
+          </p>
 
-          <h2>11. External Links</h2>
-          <p>The Services may contain links to other websites on the Internet that are owned and operated by third parties (the &ldquo;External Sites&rdquo;). These links are provided solely as a convenience to you and not as an endorsement by Keyflow of the contents or reliability of such External Sites.</p>
-          <p>If you decide to access linked third-party websites, you do so at your own risk. Keyflow does not accept liability, and shall not be liable to you for any loss or damage arising from or as a result of your acting upon the content of another website to which you may link from the Services.</p>
+          <h2>6. Your Rights and Choices</h2>
 
-          <h2>12. Changes to This Policy</h2>
-          <p>Keyflow may change this Policy from time to time. If we make significant changes in the way we treat your personal data, or to this Policy, we will provide you notice through the Services or by other means, such as email.</p>
-          <p>Material changes to the purposes for which we process your data may require us to request your re-consent.</p>
-          <p>Your continued use of the Services after such notice constitutes your acknowledgment of the changes. We encourage you to periodically review this Policy for the latest information on our privacy practices.</p>
-          <p>This Policy is accessible through:</p>
+          <h3>6.1 Marketing and preferences</h3>
+          <p>
+            Marketing communications are sent <strong>only with your prior opt-in consent</strong>, which is never pre-ticked. You may withdraw consent at any time — via the unsubscribe link in any marketing message, your account settings, or by contacting us — and withdrawal is as easy as giving consent was. Transactional and service messages (for example, signing requests and payment notices) are not marketing and continue while you use the Services.
+          </p>
+
+          <h3>6.2 Your rights under the DP Law</h3>
+          <p>Under Articles 32–40 of the DP Law you have the right, at any time and for any reason, to:</p>
           <ul>
-            <li>Each of our products (LeaseFlow, LeadsFlow, Connect)</li>
-            <li>The Keyflow website (keyflowae.com)</li>
-            <li>Our Terms of Service (keyflowae.com/terms-of-service)</li>
-            <li>Contracts and agreements as necessary or appropriate</li>
+            <li><strong>withdraw consent</strong> to processing based on consent (Article 32);</li>
+            <li><strong>access</strong> your Personal Data and receive a copy of it (Article 33);</li>
+            <li><strong>rectify</strong> inaccurate or incomplete data (Article 33);</li>
+            <li><strong>erasure</strong> of your data, where the legal grounds apply (Article 33);</li>
+            <li><strong>object</strong> to processing — including an <strong>absolute right to object to direct marketing</strong> (Article 34);</li>
+            <li><strong>restrict</strong> processing in the circumstances the DP Law defines (Article 35);</li>
+            <li><strong>data portability</strong> — receive the data you provided in a structured, commonly used, machine-readable format (Article 37);</li>
+            <li>object to <strong>solely automated decisions</strong> producing legal or similarly significant effects, and require human review (Article 38 — noting that we make no such decisions, per Section 4.2); and</li>
+            <li><strong>lodge a complaint with the Commissioner of Data Protection</strong> at any time (contact details at the end of this Policy).</li>
           </ul>
 
-          <h2>13. Contact Us</h2>
-          <p>If you have any questions, comments, or requests related to this Policy, or if you have any complaints related to how Keyflow processes your personal data, please contact us using any of the following methods:</p>
+          <h3>6.3 How requests are handled</h3>
+          <ul>
+            <li>Requests are actioned <strong>free of charge</strong> and answered <strong>within one month</strong> of receipt. For complex or numerous requests the DP Law permits a two-month extension; if we need one, we will tell you within the first month, with reasons. A reasonable fee may be charged only for manifestly unfounded or excessive requests, or for extraordinary administrative costs, with written reasons.</li>
+            <li>We verify your identity before disclosing data; where we have genuine doubt, the response clock pauses until identity is established. Other people&apos;s Personal Data is redacted from what we provide.</li>
+            <li><strong>You will never be discriminated against for exercising your rights</strong> (Article 39): we will not deny you the Services, or vary their price or quality, because you exercised a right.</li>
+          </ul>
+
+          <h3>6.4 Limits on erasure — stated prominently</h3>
+          <p>Some records cannot be erased on request, and the DP Law requires us to tell you this clearly:</p>
+          <ul>
+            <li><strong>Signed contracts</strong> are legally immutable documents: altering an executed, digitally signed contract would destroy its validity. Signed documents are retained for 15 years from execution.</li>
+            <li><strong>Audit-log entries</strong> are an append-only, tamper-evident security record and are retained for 7 years, after which they are deleted automatically.</li>
+            <li><strong>Financial records</strong> (invoices, payments, cheque records) are retained for their statutory periods and are never deleted on request during those periods.</li>
+          </ul>
+          <p>
+            In each case, when your erasure request is executed you disappear from all live, operational systems by irreversible anonymisation; what remains is a sealed historical record kept solely as legal evidence, protected by the same security as live data, used for no decision about you, and deleted when its statutory period ends. Any partial refusal of an erasure request is given to you in writing with its legal ground.
+          </p>
+
+          <h3>6.5 Data held for your agency</h3>
+          <p>
+            Where your request concerns records controlled by a real-estate agency (Section 1.2), the agency is responsible for the decision and we assist it: we will route your request to the agency without undue delay, and the platform provides the agency with the tools to respond within the statutory deadline. You may also approach the agency directly.
+          </p>
+
+          <h3>6.6 How to make a request</h3>
+          <p>
+            Use any of the contact methods in the <strong>Contact Us</strong> section below, or the self-service request workflow in the Keys app. Requests made through any channel are honoured.
+          </p>
+
+          <h2>7. Security Precautions</h2>
+          <p>We protect Personal Data from the point of collection to the point of destruction with technical and organisational measures that include:</p>
+          <ul>
+            <li><strong>encryption</strong> at rest and in transit (TLS 1.2+), with databases in private, isolated networks and document storage encrypted, versioned and blocked from public access;</li>
+            <li><strong>verified identity instead of passwords</strong> — platform users authenticate through UAE PASS, so we hold no passwords; session tokens are stored hashed and can be revoked remotely;</li>
+            <li><strong>least-privilege access</strong> — strict per-tenant isolation, capability-based authorisation with per-user restrictions, and production access limited to named personnel;</li>
+            <li><strong>accountability tooling</strong> — an append-only audit log of every data change; secrets held in a managed vault; deployment pipelines authenticated without static credentials; encrypted daily backups;</li>
+            <li><strong>processor flow-down</strong> — every service provider is bound by written contract to equivalent confidentiality and security obligations;</li>
+            <li><strong>incident management</strong> — a documented breach-response procedure providing for notification of the Commissioner of Data Protection and, where required by Article 42 of the DP Law, of affected individuals.</li>
+          </ul>
+          <p>
+            No transmission or storage system can be guaranteed 100% secure. While we apply the safeguards above and review them continuously, we cannot guarantee absolute security; you can help by keeping your UAE PASS credentials and devices secure and by telling us immediately at <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a> if you suspect any misuse of your data or account.
+          </p>
+
+          <h2>8. Cookies</h2>
+          <p>Cookies are small files placed on your device by a website. Consistent with the DP Law&apos;s data-minimisation requirements, the Services collect the bare minimum necessary:</p>
+          <ul>
+            <li><strong>Essential cookies (always on)</strong> — strictly necessary for the Services to function: authentication, session management, security. These cannot be switched off, as the Services do not work without them.</li>
+            <li><strong>Analytics cookies (opt-in only)</strong> — used to understand aggregate site usage. These are <strong>off by default</strong> and set only if you opt in through the consent banner. You can change or withdraw your choice at any time via the cookie settings on the site; your choice is stored on your own device (in browser local storage under the key <code>keyflow_cookie_consent</code>).</li>
+            <li><strong>Advertising cookies</strong> — <strong>we do not use them.</strong></li>
+          </ul>
+          <p>
+            You can also control cookies through your browser settings, including deleting existing cookies and blocking new ones; blocking essential cookies will prevent parts of the Services from working. General guidance on cookies is available at{" "}
+            <a href="https://www.aboutcookies.org" target="_blank" rel="noopener noreferrer">aboutcookies.org</a>.
+          </p>
+
+          <h2>9. External Links</h2>
+          <p>
+            The Services may contain links to third-party websites and services (for example, UAE PASS, government portals or an agency&apos;s own website). This Policy does not apply to those third parties, and we are not responsible for their content or privacy practices. Review the privacy notice of any third-party service before providing Personal Data to it.
+          </p>
+
+          <h2>10. Changes to this Policy</h2>
+          <p>
+            We may update this Policy from time to time. The current version, with its effective date, is always published at <a href="/privacy-policy"><strong>https://keyflowae.com/privacy-policy</strong></a>, and every KeyFlow product links to it. If we make significant changes — including any change to the purposes of processing, the jurisdictions data is transferred to, or the introduction of AI-assisted features under Section 4.2 — we will give notice through the Services (website notice, in-app notice or email) before the change takes effect. This version 2.0, effective 22 July 2026, replaces all previous versions, including those published under a superseded domain.
+          </p>
+
+          <h2>Contact Us</h2>
+          <p>
+            You can contact us about this Policy, our processing of your Personal Data, or to exercise any of your rights, through <strong>any</strong> of the following methods (the DP Law requires us to offer at least two — we offer three):
+          </p>
           <div className="bg-[#1A1A1A] p-5 rounded-lg my-4">
-            <p className="text-white font-semibold">Data Protection Officer</p>
-            <p>Abdallah Al Shaqra (Interim DPO)</p>
-            <p className="mt-2"><strong className="text-white">Method 1 &mdash; Email:</strong> <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a></p>
-            <p><strong className="text-white">Method 2 &mdash; Post:</strong> Data Protection Officer, Keyflow Technology Ltd, Unit GA-00-SZ-01-FX-07, Level 1, Gate Avenue South, DIFC, P.O. Box 507211, Dubai, United Arab Emirates</p>
-            <p><strong className="text-white">Method 3 &mdash; Phone:</strong> +971 56 754 0655</p>
-            <p><strong className="text-white">Method 4 &mdash; DPO Direct:</strong> <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a></p>
+            <p><strong className="text-white">1. Email:</strong> <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a></p>
+            <p><strong className="text-white">2. Post:</strong> Data Protection Officer, KeyFlow Technology Ltd, Unit GA-00-SZ-01-FX-07, Level 1, Gate Avenue South Zone, DIFC, Dubai, UAE</p>
+            <p><strong className="text-white">3. In-app:</strong> the self-service data-request workflow in the Keys app</p>
           </div>
-
-          <h2>14. Complaints to the Commissioner</h2>
-          <p>If you are not satisfied with our response to your complaint or believe that our processing of your personal data does not comply with the DP Law, you have the right to lodge a complaint with the DIFC Commissioner of Data Protection:</p>
+          <p>
+            <strong>Data Protection Officer (appointed under Article 16 of the DP Law):</strong> Abdallah Alshaqra (interim DPO) — <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a>.
+          </p>
+          <p>
+            If you are not satisfied with our response, or wish to raise a concern directly, you have the right to lodge a complaint at any time with the <strong>Commissioner of Data Protection</strong>:
+          </p>
           <div className="bg-[#1A1A1A] p-5 rounded-lg my-4">
-            <p className="text-white font-semibold">DIFC Commissioner of Data Protection</p>
+            <p className="text-white font-semibold">Commissioner of Data Protection</p>
             <p>Dubai International Financial Centre Authority</p>
-            <p>Level 14, The Gate Building, Dubai, UAE</p>
-            <p>Phone: +971 4 362 2222</p>
+            <p>Level 14, The Gate Building, DIFC, Dubai, UAE</p>
+            <p>Telephone: +971 4 362 2222</p>
             <p>Email: <a href="mailto:commissioner@dp.difc.ae">commissioner@dp.difc.ae</a></p>
-            <p>Website: <a href="https://www.difc.ae/business/operating/data-protection/" target="_blank" rel="noopener noreferrer">difc.ae/business/operating/data-protection</a></p>
           </div>
-
-          <h2>15. Data Protection Officer</h2>
-          <p>Keyflow has appointed a Data Protection Officer in accordance with Article 16 of the DP Law, as Keyflow conducts High Risk Processing involving AI-powered document analysis, OCR of identity documents, and systematic processing of considerable amounts of personal data.</p>
-          <p>The DPO may be contacted using the details provided in Section 13 above, or directly via email at <a href="mailto:privacy@keyflowae.com">privacy@keyflowae.com</a>.</p>
-          <p>The DPO is responsible for:</p>
-          <ul>
-            <li>Monitoring compliance with the DP Law and this Policy</li>
-            <li>Advising on Data Protection Impact Assessments</li>
-            <li>Cooperating with and acting as the point of contact for the Commissioner of Data Protection</li>
-            <li>Handling data subject requests and complaints</li>
-          </ul>
-
-          <h2>Appendix A: Lawful Bases for Processing by Product</h2>
-
-          <h3>LeaseFlow</h3>
-          <table>
-            <thead><tr><th>Processing Activity</th><th>Lawful Basis</th><th>DP Law Reference</th></tr></thead>
-            <tbody>
-              <tr><td>Lease contract management</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Tenant data management</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Ejari registration</td><td>Legal obligation</td><td>Article 10(1)(c)</td></tr>
-              <tr><td>RERA rental index compliance</td><td>Legal obligation</td><td>Article 10(1)(c)</td></tr>
-              <tr><td>AI lease document analysis (Bedrock)</td><td>Legitimate interest</td><td>Article 10(1)(f)</td></tr>
-              <tr><td>OCR of identity documents (Textract)</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Profile photo extraction (Rekognition DetectFaces)</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Audit logging</td><td>Legal obligation</td><td>Article 10(1)(c)</td></tr>
-              <tr><td>Transactional emails</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Marketing communications</td><td>Consent</td><td>Article 10(1)(a)</td></tr>
-            </tbody>
-          </table>
-
-          <h3>LeadsFlow</h3>
-          <table>
-            <thead><tr><th>Processing Activity</th><th>Lawful Basis</th><th>DP Law Reference</th></tr></thead>
-            <tbody>
-              <tr><td>Lead data management</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Lead distribution to agents</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Lead analytics and conversion tracking</td><td>Legitimate interest</td><td>Article 10(1)(f)</td></tr>
-              <tr><td>Portal lead ingestion (Bayut, PF, Dubizzle)</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Meta Lead Ads ingestion</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Transactional emails</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Marketing communications</td><td>Consent</td><td>Article 10(1)(a)</td></tr>
-              <tr><td>Audit logging</td><td>Legal obligation</td><td>Article 10(1)(c)</td></tr>
-            </tbody>
-          </table>
-
-          <h3>Connect</h3>
-          <table>
-            <thead><tr><th>Processing Activity</th><th>Lawful Basis</th><th>DP Law Reference</th></tr></thead>
-            <tbody>
-              <tr><td>WhatsApp messaging</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Email communications</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Contact management</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Cross-product contact linking</td><td>Legitimate interest</td><td>Article 10(1)(f)</td></tr>
-              <tr><td>Message delivery tracking</td><td>Contract performance</td><td>Article 10(1)(b)</td></tr>
-              <tr><td>Audit logging</td><td>Legal obligation</td><td>Article 10(1)(c)</td></tr>
-            </tbody>
-          </table>
-
-          <h3>Keyflow Website</h3>
-          <table>
-            <thead><tr><th>Processing Activity</th><th>Lawful Basis</th><th>DP Law Reference</th></tr></thead>
-            <tbody>
-              <tr><td>Contact form submissions</td><td>Consent</td><td>Article 10(1)(a)</td></tr>
-              <tr><td>Essential cookies</td><td>Legitimate interest</td><td>Article 10(1)(f)</td></tr>
-              <tr><td>Analytics cookies</td><td>Consent</td><td>Article 10(1)(a)</td></tr>
-            </tbody>
-          </table>
-
-          <h2>Appendix B: Sub-Processors</h2>
-          <p>Keyflow uses the following sub-processors as part of its engagement with primary processors:</p>
-
-          <h3>AWS Sub-Services (covered by single AWS DPA)</h3>
-          <table>
-            <thead><tr><th>Sub-Service</th><th>Purpose</th><th>Data Processed</th><th>Region</th></tr></thead>
-            <tbody>
-              <tr><td>RDS (PostgreSQL)</td><td>Database hosting</td><td>All database records</td><td>me-central-1 (UAE)</td></tr>
-              <tr><td>S3</td><td>File storage</td><td>Documents, images, uploads</td><td>me-central-1 (UAE)</td></tr>
-              <tr><td>SES</td><td>Email delivery</td><td>Recipient emails, email content</td><td>me-central-1 (UAE)</td></tr>
-              <tr><td>SNS</td><td>Notifications</td><td>Bounce/complaint notifications</td><td>me-central-1 (UAE)</td></tr>
-              <tr><td>Bedrock (Claude Haiku)</td><td>AI document analysis</td><td>Lease documents, property data</td><td>us-east-1 (Virginia)</td></tr>
-              <tr><td>Textract</td><td>OCR processing</td><td>Emirates IDs, contracts</td><td>ap-south-1 (Mumbai)</td></tr>
-              <tr><td>Rekognition</td><td>Face detection (DetectFaces only)</td><td>Emirates ID images for profile photo extraction</td><td>ap-south-1 (Mumbai)</td></tr>
-              <tr><td>ECS (Fargate)</td><td>Application hosting</td><td>All data in-memory during processing</td><td>me-central-1 (UAE)</td></tr>
-              <tr><td>CloudFront</td><td>CDN</td><td>Request/response data in transit</td><td>Global edge locations</td></tr>
-              <tr><td>WAF</td><td>Security</td><td>Request metadata</td><td>Global</td></tr>
-            </tbody>
-          </table>
-
-          <h3>Meta Sub-Services (covered by Meta DPA)</h3>
-          <table>
-            <thead><tr><th>Sub-Service</th><th>Purpose</th><th>Data Processed</th><th>Region</th></tr></thead>
-            <tbody>
-              <tr><td>WhatsApp Business API</td><td>Messaging</td><td>Phone numbers, message content, contact names, delivery status</td><td>US/EU</td></tr>
-            </tbody>
-          </table>
 
           <h2>Document Control</h2>
           <table>
@@ -500,17 +339,18 @@ export default function PrivacyPolicyPage() {
               <tr><td>1.0</td><td>22 February 2026</td><td>Abdallah Al Shaqra (Interim DPO)</td><td>Initial version covering all 4 products</td></tr>
               <tr><td>1.1</td><td>22 February 2026</td><td>Abdallah Al Shaqra (Interim DPO)</td><td>Reclassification: Rekognition usage updated from biometric identity verification to profile photo extraction. Removed special category data classification. Added B2B2C data processing model section. Updated lawful bases.</td></tr>
               <tr><td>1.2</td><td>22 February 2026</td><td>Abdallah Al Shaqra (Interim DPO)</td><td>Updated &ldquo;Terms of Use&rdquo; references to &ldquo;Terms of Service&rdquo; (TOS-2026-001) to align with the unified Terms of Service document covering all Keyflow products.</td></tr>
+              <tr><td>2.0</td><td>22 July 2026</td><td>Abdallah Alshaqra (Interim DPO)</td><td>Full rewrite aligned with the next-generation Keyflow platform: unified versioning with the Terms of Service (single v2.0 tracked by the consent gate); Controller/Processor role split; UAE PASS source-verified identity (no document OCR/AI extraction); Singapore (ap-southeast-1) primary hosting as an adequate jurisdiction; updated retention schedule, transfer map and sub-processor list; Regulation 10 commitment for any future AI features; DealsFlow discontinuation recorded. Supersedes all v1.x versions published under a superseded domain.</td></tr>
             </tbody>
           </table>
           <p><strong>Review Schedule:</strong> Annually at minimum, or when processing activities change materially.</p>
-          <p><strong>Next review date:</strong> 22 February 2027</p>
+          <p><strong>Next review date:</strong> 22 July 2027</p>
 
           <hr className="my-8 border-[#333]" />
           <p className="text-sm text-[#666] italic">
-            This Policy was last updated on 22 February 2026.
+            KeyFlow Technology Ltd — Privacy Policy version 2.0, effective 22 July 2026.
           </p>
           <p className="text-sm text-[#666] italic">
-            Keyflow Technology Ltd, DIFC License CL-12435, Unit GA-00-SZ-01-FX-07, Level 1, Gate Avenue - South, DIFC, Dubai, UAE
+            KeyFlow Technology Ltd, DIFC Commercial Licence CL-12435, Unit GA-00-SZ-01-FX-07, Level 1, Gate Avenue South Zone, DIFC, Dubai, UAE
           </p>
         </div>
 
