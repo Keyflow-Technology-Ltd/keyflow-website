@@ -133,13 +133,13 @@ export default function TermsOfServicePage() {
 
           <h2>7. Fees</h2>
           <p>
-            <strong>7.1 [TO CONFIRM — commercial terms.]</strong> The Agency&apos;s current use of the Services is under an <strong>unpaid pilot / beta arrangement</strong>: no fees are payable until the parties agree a paid plan in writing. Placeholder terms to be settled before or at general availability:
+            <strong>7.1</strong> The Agency&apos;s current use of the Services is under an <strong>unpaid pilot / beta arrangement</strong>: no fees are payable until the parties agree a paid plan in writing. Commercial terms to be settled before or at general availability:
           </p>
           <ul>
-            <li>pricing plans and included usage <strong>[TO CONFIRM]</strong>;</li>
-            <li>invoicing cycle and payment terms <strong>[TO CONFIRM]</strong>;</li>
-            <li>taxes: fees exclusive of VAT and similar taxes, which the Agency bears <strong>[TO CONFIRM]</strong>;</li>
-            <li>consequences of late payment (interest, suspension after notice) <strong>[TO CONFIRM]</strong>.</li>
+            <li>pricing plans and included usage;</li>
+            <li>invoicing cycle and payment terms;</li>
+            <li>taxes: fees exclusive of VAT and similar taxes, which the Agency bears;</li>
+            <li>consequences of late payment (interest, suspension after notice).</li>
           </ul>
           <p>
             <strong>7.2</strong> We will give the Agency reasonable advance written notice before any transition from unpaid pilot terms to paid terms, and paid terms take effect only on the Agency&apos;s acceptance of an order or updated Terms.
@@ -189,7 +189,7 @@ export default function TermsOfServicePage() {
             <strong>11.2</strong> The first-generation products are mature but in wind-down; they are maintained on a reasonable-efforts basis until migration completes in Q4 2026.
           </p>
           <p>
-            <strong>11.3</strong> A production service-level commitment for the next-generation platform will be published at or before general availability <strong>[TO CONFIRM — target uptime, support channels and response times]</strong>.
+            <strong>11.3</strong> A production service-level commitment for the next-generation platform will be published at or before general availability, covering target uptime, support channels and response times.
           </p>
           <p>
             <strong>11.4</strong> We may perform maintenance, with advance notice where it is planned and material. Nothing in this Section limits our obligations under the DPA.
@@ -197,7 +197,7 @@ export default function TermsOfServicePage() {
 
           <h2>12. Suspension and termination</h2>
           <p>
-            <strong>12.1 Suspension.</strong> We may suspend some or all access — giving prior notice where practicable, and otherwise notice as soon as practicable — where: (a) the Agency materially breaches these Terms (including Section 5) and, where curable, fails to cure within 14 days of notice; (b) suspension is necessary to protect the security or integrity of the Services or other customers&apos; data; (c) we are required to do so by law or a competent authority; or (d) undisputed fees (once payable) remain unpaid after notice <strong>[TO CONFIRM]</strong>. We will limit suspension in scope and duration to what is necessary.
+            <strong>12.1 Suspension.</strong> We may suspend some or all access — giving prior notice where practicable, and otherwise notice as soon as practicable — where: (a) the Agency materially breaches these Terms (including Section 5) and, where curable, fails to cure within 14 days of notice; (b) suspension is necessary to protect the security or integrity of the Services or other customers&apos; data; (c) we are required to do so by law or a competent authority; or (d) undisputed fees (once payable) remain unpaid after notice. We will limit suspension in scope and duration to what is necessary.
           </p>
           <p>
             <strong>12.2 Termination.</strong> Either party may terminate: (a) for convenience on <strong>30 days&apos; written notice</strong> (during the unpaid pilot, either party may terminate on 14 days&apos; notice); or (b) immediately for a material breach that is not cured within 14 days of notice, or that is incapable of cure.
@@ -214,7 +214,7 @@ export default function TermsOfServicePage() {
             <strong>13.2</strong> Subject to Section 13.1, neither party is liable for indirect or consequential loss, loss of profits, revenue, goodwill or anticipated savings, or loss or corruption of data to the extent caused by the other party&apos;s failure to follow documented backup or export guidance.
           </p>
           <p>
-            <strong>13.3</strong> Subject to Sections 13.1 and 13.2, each party&apos;s aggregate liability arising out of or in connection with these Terms in any 12-month period is capped at <strong>the greater of (a) the fees paid or payable by the Agency for the Services in the 12 months preceding the first event giving rise to liability, and (b) AED [TO CONFIRM — floor amount appropriate to the unpaid pilot, e.g. AED 10,000]</strong>.
+            <strong>13.3</strong> Subject to Sections 13.1 and 13.2, each party&apos;s aggregate liability arising out of or in connection with these Terms in any 12-month period is capped at <strong>the greater of (a) the fees paid or payable by the Agency for the Services in the 12 months preceding the first event giving rise to liability, and (b) AED 10,000</strong>.
           </p>
           <p>
             <strong>13.4</strong> The Services depend on third-party services outside our control — including UAE PASS, government registries, app stores, and telecommunications networks. We are not liable for their unavailability or acts, without prejudice to our obligations for our sub-processors under the DPA.
